@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <LifeStageDef>
+    <defName>ToddlerStageGerzee</defName>
+    <label>baby</label>
+    <bodySizeFactor>0.2</bodySizeFactor>
+    <healthScaleFactor>0.2</healthScaleFactor>
+    <hungerRateFactor>0.7</hungerRateFactor>
+    <marketValueFactor>0.5</marketValueFactor>
+	    <meleeDamageFactor>0.2</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>0.4</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+
+  <LifeStageDef>
+    <defName>ChildStageGerzee</defName>
+    <label>child</label>
+    <bodySizeFactor>0.5</bodySizeFactor>
+    <healthScaleFactor>0.5</healthScaleFactor>
+    <hungerRateFactor>0.9</hungerRateFactor>
+    <marketValueFactor>0.9</marketValueFactor>
+	    <meleeDamageFactor>0.65</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>0.85</MoveSpeed>
+	  	      <MeleeDodgeChance>0.5</MeleeDodgeChance>
+    </statFactors>
+  </LifeStageDef>
+  
+  <LifeStageDef>
+    <defName>TeenStageGerzee</defName>
+    <label>teen</label>
+    <visible>false</visible>
+    <reproductive>true</reproductive>
+	    <bodySizeFactor>0.8</bodySizeFactor>
+		    <healthScaleFactor>0.90</healthScaleFactor>
+	    <meleeDamageFactor>0.9</meleeDamageFactor>
+		    <statFactors>
+      <MoveSpeed>0.95</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+
+  <LifeStageDef>
+    <defName>AdultStageGerzee</defName>
+    <label>adult</label>
+    <visible>false</visible>
+    <reproductive>true</reproductive>
+  </LifeStageDef>
+
+  <LifeStageDef>
+    <defName>ElderStageGerzee</defName>
+    <label>elder</label>
+    <visible>false</visible>
+    <reproductive>true</reproductive>
+	  <meleeDamageFactor>1.1</meleeDamageFactor>	  
+	      <healthScaleFactor>1.1</healthScaleFactor>
+		      <statFactors>
+      <MoveSpeed>1.1</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+  
+  <LifeStageDef>
+    <defName>AncientStageGerzee</defName>
+    <label>ancient</label>
+    <visible>false</visible>
+    <reproductive>false</reproductive>
+		  <meleeDamageFactor>1</meleeDamageFactor>	  	
+	      <healthScaleFactor>1.2</healthScaleFactor>
+		      <statFactors>
+      <MoveSpeed>1</MoveSpeed>
+    </statFactors>
+  </LifeStageDef>
+
+
+</Defs>

@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef>
+   <goodwillDailyGain>0.20</goodwillDailyGain>
+   <goodwillDailyFall>0.40</goodwillDailyFall>
+		<defName>GerzeeSlaveSurvivors</defName>
+		<label>Gerzee Slave Survivors</label>
+    <description>A colony of escaped Gerzee slaves, banded together and trying to survive.</description>
+    <pawnsPlural>Gerzee</pawnsPlural>
+     <settlementGenerationWeight>0.75</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<hairTags>
+	    <li>Tribal</li>
+	</hairTags>
+	<fixedName>The Free Gerzee</fixedName>
+    <canMakeRandomly>true</canMakeRandomly>  
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Herd Guide</leaderTitle>
+    <startingGoodwill>
+      <min>0</min>
+      <max>5</max>
+    </startingGoodwill>
+    <naturalColonyGoodwill>
+      <min>0</min>
+      <max>1</max>
+    </naturalColonyGoodwill>
+	<pawnNameMaker>NamerPersonTribal</pawnNameMaker>  
+	<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+	<techLevel>Neolithic</techLevel>
+	<backstoryFilters> 
+	<li>
+		<categories>
+	  <li>GerzeeTribal</li>
+	  <li>ToughPeacefulTribe</li>
+   	  <li>WarriorPeacefulTribe</li>
+	  	</categories>
+	</li>
+	</backstoryFilters>
+
+	<geneticVariance>0.8</geneticVariance>
+
+    <visitorTraderKinds>
+      <li>Trader_Gerzee</li>
+    </visitorTraderKinds>
+
+   <caravanTraderKinds>
+      <li>Trader_Gerzee</li>  
+    </caravanTraderKinds>
+
+    <baseTraderKinds>
+      <li>Trader_Gerzee</li>
+    </baseTraderKinds>
+
+    <allowedArrivalTemperatureRange>
+      <min>-70</min>
+      <max>20</max>
+    </allowedArrivalTemperatureRange>
+	
+	
+	
+	<maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(200, 100)</li>
+        <li>(500, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+		
+    <pawnGroupMakers>
+	  <li>       
+        <kindDef>Combat</kindDef>
+		<commonality>100</commonality>
+        <options>
+		  <GerzeeGuard>2</GerzeeGuard>
+          <GerzeeWarrior>1</GerzeeWarrior>
+
+        </options>
+      </li>
+	  
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <GerzeeTribal>1</GerzeeTribal>
+        </options>
+      </li>
+
+
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <GerzeeTrader>1</GerzeeTrader>
+        </traders>
+        <carriers>
+          <Muffalo>2</Muffalo>
+        </carriers>
+        <!--1 to 0 guardsto reduce number of traders visiting
+        <guards>
+          <GerzeeGuard>0</GerzeeGuard>
+        </guards>-->
+		</li>
+
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <GerzeeTribal>4</GerzeeTribal>
+		  <GerzeeGuard>5</GerzeeGuard>	  
+          <GerzeeWarrior>2</GerzeeWarrior>
+     
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/GerzeeBaseIcon</settlementTexturePath>
+	<factionIconPath>World/GerzeeBaseIcon</factionIconPath>
+<!--<expandingIconTexture>World/GerzeeBaseIcon</expandingIconTexture>-->
+  </FactionDef>
+
+
+
+
+<!-- Beserked Gerzee --> 
+
+  <FactionDef>
+   <goodwillDailyGain>0.20</goodwillDailyGain>
+   <goodwillDailyFall>0.40</goodwillDailyFall>
+		<defName>GerzeeWrathful</defName>
+		<label>Gerzee Wrathful</label>
+    <description>Gerzee that mentally snapped from years of mistreatment as slaves, and are now very willing to hurt anything that isn't a part of their new tribe.</description>
+    <pawnsPlural>Gerzee</pawnsPlural>
+     <settlementGenerationWeight>0.75</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<hairTags>
+	    <li>Tribal</li>
+	</hairTags>
+	<fixedName>The Gerzee Wrathful</fixedName>
+    <canMakeRandomly>true</canMakeRandomly>  
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Chieftan</leaderTitle>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-90</max>
+    </startingGoodwill>
+	<pawnNameMaker>NamerPersonTribal</pawnNameMaker>  
+	<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+	<techLevel>Neolithic</techLevel>
+
+<!--try -->
+	<backstoryFilters> 
+	<li>
+		<categories>
+   	  <li>VengBeserker</li>
+	  <li>VengAltered</li>
+		</categories>	  
+	</li>
+	</backstoryFilters>
+
+<!--	
+		<backstoryFiltersOverride> 
+	<li>
+		<categories>
+   	  <li>VengBeserker</li>
+	  <li>VengAltered</li>
+	  	</categories>
+	</li>
+	</backstoryFiltersOverride>
+	-->
+	
+	<geneticVariance>0.8</geneticVariance>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-90</max>
+    </naturalColonyGoodwill>
+    <allowedArrivalTemperatureRange>
+      <min>-70</min>
+      <max>20</max>
+    </allowedArrivalTemperatureRange>
+	<maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(120, 60)</li>
+        <li>(200, 100)</li>		
+        <li>(550, 160)</li>
+        <li>(1300, 300)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+<!--
+	  <li>       
+        <kindDef>Combat</kindDef>
+		<commonality>60</commonality>
+        <options>
+		  <GerzeeBeserker>30</GerzeeBeserker>
+        </options>
+      </li>
+
+
+	  <li>       
+        <kindDef>Combat</kindDef>
+		<commonality>40</commonality>
+        <options>
+		  <GerzeeBeserker>25</GerzeeBeserker>
+		  <GerzeeAltered>1</GerzeeAltered>
+		</options>
+      </li>	  	    -->
+
+	  <li>       
+        <kindDef>Combat</kindDef>
+		<commonality>100</commonality>
+        <options>
+		  <GerzeeAltered>1</GerzeeAltered>
+		  <GerzeeBeserker>9</GerzeeBeserker>		  
+		</options>
+      </li>	  	 	  
+
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <GerzeeBeserker>15</GerzeeBeserker>
+        </options>
+      </li>
+
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+		  <GerzeeBeserker>15</GerzeeBeserker>   
+  		  <GerzeeAltered>2</GerzeeAltered>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/GerzeeBeserkerBaseIcon</settlementTexturePath>
+	<factionIconPath>World/GerzeeBeserkerBaseIcon</factionIconPath>
+<!--	<expandingIconTexture>World/GerzeeBeserkerBaseIcon</expandingIconTexture>-->
+  </FactionDef>
+  
+  
+
+</Defs>

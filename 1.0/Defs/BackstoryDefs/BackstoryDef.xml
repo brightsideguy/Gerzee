@@ -1,0 +1,1452 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<!-- PEACEFUL TRIBE -->
+
+<!--   Hauler slave   1 -->
+<AlienRace.BackstoryDef>
+    <defName>HaulSlave</defName>
+    <title>Hauler Slave</title>
+	<titleShort>Hauler Slave</titleShort>
+    <baseDescription>[PAWN_nameDef] was captured by slavers and torn from their homeworld. [PAWN_pronoun] was mainly used for hauling large objects, as the Gerzee can carry much more weight and bulk than most other races.</baseDescription>
+	<slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-20</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-20</amount>	  
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>-10</amount>	  
+      </li>
+	  <li>
+        <defName>Plants</defName>
+        <amount>3</amount>	  
+      </li>
+       </skillGains>
+	<bioAgeRange>
+        <min>2</min>
+        <max>15</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+	   
+	<spawnCategories>
+	  <li>PeacefulTribe</li>
+	  <li>VengTribe</li>
+  	  <li>PeacefulTribeTrader</li>
+    </spawnCategories>
+			
+	<workDisables>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+    </workDisables>
+
+ <disallowedTraits>
+        <li>
+            <defName>Psychopath</defName>
+        </li>
+        <li>
+            <defName>Bloodlust</defName>
+        </li>
+		<li>
+            <defName>Brawler</defName>
+        </li>
+    </disallowedTraits>
+</AlienRace.BackstoryDef>
+
+
+<!--  Dearmed Hauler slave  2 -->
+<AlienRace.BackstoryDef>
+    <defName>DearmedHaulSlave</defName>
+    <title>Dearmed Hauler Slave</title>
+	<titleShort>Dearmed Hauler</titleShort>
+    <baseDescription>[PAWN_nameDef] was captured by mine slavers and torn from their homeworld. Unfortunately for [PAWN_objective], these were particularly brutal slavers. To help prevent mine workers from fighting their way out, the slavers would take an arm or two of their hauling slaves and replace them with simple prosthetics. This didn’t slow down the work since a hauler’s job was to carry large backpacks of broken rock, but it did make helping their fellow slaves in a fight nearly impossible.</baseDescription>
+	<slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-20</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-20</amount>	  
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>-10</amount>	  
+      </li>
+	  <li>
+        <defName>Plants</defName>
+        <amount>3</amount>	  
+      </li>
+       </skillGains>
+	<bioAgeRange>
+        <min>2</min>
+        <max>15</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+	   
+	<spawnCategories>
+	  <li>PeacefulTribe</li>
+	  <li>VengTribe</li>
+    </spawnCategories>
+			
+	<workDisables>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+    </workDisables>
+
+ <disallowedTraits>
+        <li>
+            <defName>Psychopath</defName>
+        </li>
+        <li>
+            <defName>Bloodlust</defName>
+        </li>
+		<li>
+            <defName>Brawler</defName>
+        </li>
+    </disallowedTraits>
+    <forcedHediffs>
+      <li>SimpleProstheticArm</li>	
+      <li>SimpleProstheticArm</li>	    
+    </forcedHediffs>
+</AlienRace.BackstoryDef>
+
+
+
+<!--      Planter slave  3 -->
+
+<AlienRace.BackstoryDef>
+    <defName>PlanterSlave</defName>
+    <title>Planter Slave</title>
+	<titleShort>Planter Slave</titleShort>
+<baseDescription>Considering the Gerzee lifestyle of constantly foraging for plants, slavers had captured [PAWN_nameDef] when [PAWN_pronoun] was young and used [PAWN_objective] as farm labor for the corn fields of the slaver base. [PAWN_pronoun] would spend all day working the fields, being given little time to do anything else.</baseDescription>   
+	<slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-20</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-20</amount>	  
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>-10</amount>	  
+      </li>
+	  <li>
+        <defName>Mining</defName>
+        <amount>-10</amount>	  
+      </li>
+	  <li>
+        <defName>Construction</defName>
+        <amount>-10</amount>	  
+      </li>
+	  <li>
+        <defName>Plants</defName>
+        <amount>8</amount>	  
+      </li>
+       </skillGains>
+	<bioAgeRange>
+        <min>2</min>
+        <max>15</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+	<spawnCategories>
+	  <li>PeacefulTribe</li>
+	  <li>VengTribe</li>
+    </spawnCategories>
+	<workDisables>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+    </workDisables>
+ <disallowedTraits>
+        <li>
+            <defName>Psychopath</defName>
+        </li>
+        <li>
+            <defName>Bloodlust</defName>
+        </li>
+		<li>
+            <defName>Brawler</defName>
+        </li>	
+    </disallowedTraits>
+</AlienRace.BackstoryDef>
+
+
+<!--      Farmer slave  4-->
+
+<AlienRace.BackstoryDef>
+    <defName>FarmSlave</defName>
+    <title>Farm Slave</title>
+  <titleShort>Farm Slave</titleShort>
+<baseDescription>Considering the Gerzee lifestyle of constantly foraging for plants, slavers had captured [PAWN_nameDef] when [PAWN_pronoun] was young and sold [PAWN_objective] as farm labor. [PAWN_pronoun] would be used mainly be used to plant crops and haul heavy things, and occasionally to help tend the animals.</baseDescription>    
+  <slot>Childhood</slot>
+    <skillGains>
+    <li>
+        <defName>Shooting</defName>
+        <amount>-20</amount>
+    </li>
+    <li>
+        <defName>Melee</defName>
+        <amount>-20</amount>    
+    </li>
+    <li>
+        <defName>Medicine</defName>
+        <amount>-5</amount>    
+    </li>
+    <li>
+        <defName>Plants</defName>
+        <amount>4</amount>    
+    </li>
+    <li>
+        <defName>Animals</defName>
+        <amount>2</amount>    
+    </li>
+       </skillGains>
+  <bioAgeRange>
+        <min>2</min>
+        <max>15</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+  <spawnCategories>
+    <li>PeacefulTribe</li>
+    <li>VengTribe</li>
+    </spawnCategories>
+  <workDisables>
+    <li>Intellectual</li>
+    <li>Cooking</li>
+    </workDisables>
+ <disallowedTraits>
+        <li>
+            <defName>Psychopath</defName>
+        </li>
+        <li>
+            <defName>Bloodlust</defName>
+        </li>
+    <li>
+            <defName>Brawler</defName>
+        </li> 
+    </disallowedTraits>
+</AlienRace.BackstoryDef>
+
+
+
+
+<!--      Miner slave 5-->
+
+<AlienRace.BackstoryDef>
+    <defName>MineSlave</defName>
+    <title>Mine Slave</title>
+	<titleShort>Mine Slave</titleShort>
+    <baseDescription>Mining slavers captured [PAWN_nameDef] from the Gerzee homeworld, using [PAWN_possessive] strength to quickly smash through rock.</baseDescription>    
+	<slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-20</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-20</amount>	  
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>-10</amount>	  
+      </li>
+	  <li>
+        <defName>Mining</defName>
+        <amount>4</amount>	  
+      </li>
+       </skillGains>
+	<bioAgeRange>
+        <min>2</min>
+        <max>15</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+	<spawnCategories>
+	  <li>PeacefulTribe</li>
+	  <li>VengTribe</li>
+    </spawnCategories>
+	<workDisables>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+    </workDisables>
+ <disallowedTraits>
+        <li>
+            <defName>Psychopath</defName>
+        </li>
+        <li>
+            <defName>Bloodlust</defName>
+        </li>
+		<li>
+            <defName>Brawler</defName>
+        </li>	
+    </disallowedTraits>
+</AlienRace.BackstoryDef>
+
+
+
+
+
+<!--  Peg Legged Miner slave 6-->
+
+<AlienRace.BackstoryDef>
+    <defName>PegMineSlave</defName>
+    <title>Pegleg Mine Slave</title>
+	<titleShort>Pegleg Slave</titleShort>
+<baseDescription>Mining slavers captured [PAWN_nameDef] from the Gerzee homeworld, using [PAWN_possessive] strength to quickly smash through rock. Unfortunately for [PAWN_nameDef], these were particularly brutal slavers. Knowing that Gerzee miners were some of the few Gerzee who to try to break out of slavery, these slavers replaced their miners’ legs with a wooden peg leg or two. [PAWN_nameDef] did not escape this fate.</baseDescription>
+	<slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-20</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-20</amount>	  
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>-7</amount>	  
+      </li>
+	  <li>
+        <defName>Mining</defName>
+        <amount>4</amount>	  
+      </li>
+       </skillGains>
+	<bioAgeRange>
+        <min>2</min>
+        <max>15</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+	<spawnCategories>
+	  <li>PeacefulTribe</li>
+	  <li>VengTribe</li>
+    </spawnCategories>
+	<workDisables>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+    </workDisables>
+ <disallowedTraits>
+        <li>
+            <defName>Psychopath</defName>
+        </li>
+        <li>
+            <defName>Bloodlust</defName>
+        </li>
+		<li>
+            <defName>Brawler</defName>
+        </li>	
+    </disallowedTraits>
+	<forcedHediffs>
+      <li>PegLeg</li>	
+      <li>PegLeg</li>
+	</forcedHediffs>
+</AlienRace.BackstoryDef>
+
+
+
+
+
+<!--  Trainer slave     7-->
+<AlienRace.BackstoryDef>
+    <defName>HandlerSlave</defName>
+    <title>Handler Slave</title>
+	<titleShort>Handler Slave</titleShort>
+    <baseDescription>[PAWN_nameDef] was captured by slavers at a young age. Being considered just a “smarter” animal by the slavers, [PAWN_pronoun] was assigned to dealing with simple animal chores, such as milking and patching up muffalo.</baseDescription>    
+	<slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-20</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-20</amount>	  
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>-10</amount>	  
+      </li>
+	  <li>
+        <defName>Animals</defName>
+        <amount>4</amount>	  
+      </li>
+       </skillGains>
+	<bioAgeRange>
+        <min>2</min>
+        <max>15</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+	<spawnCategories>
+	  <li>PeacefulTribe</li>
+	  <li>VengTribe</li>
+  	  <li>PeacefulTribeTrader</li>
+    </spawnCategories>
+	<workDisables>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+    </workDisables>
+ <disallowedTraits>
+        <li>
+            <defName>Psychopath</defName>
+        </li>
+        <li>
+            <defName>Bloodlust</defName>
+        </li>
+		<li>
+            <defName>Brawler</defName>
+        </li>	
+    </disallowedTraits>
+</AlienRace.BackstoryDef>
+
+
+
+
+
+<!--  tortured slave    8-->
+<AlienRace.BackstoryDef>
+    <defName>TortureSlave</defName>
+    <title>Tortured Slave</title>
+	<titleShort>Tortured Slave</titleShort>
+	<baseDescription>[PAWN_nameDef] was already unlucky enough to have been captured by slavers and taken from [PAWN_possessive] homeworld. Unfortunately, those slavers were particularly brutal, and took joy from torturing [PAWN_objective] for years. [PAWN_nameDef] managed to survive long enough to be sold off to other slavers, though by then a good amount of damage had already been done to [PAWN_possessive] body and mind.</baseDescription>
+	<slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-20</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-20</amount>	  
+      </li>
+       </skillGains>
+	<bioAgeRange>
+        <min>2</min>
+        <max>15</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+	<spawnCategories>
+	  <li>PeacefulTribe</li>
+	  <li>VengTribe</li>
+    </spawnCategories>
+	<workDisables>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+		<li>Social</li>
+		<li>Caring</li>
+    </workDisables>
+ <disallowedTraits>
+        <li>
+            <defName>Psychopath</defName>
+        </li>
+        <li>
+            <defName>Bloodlust</defName>
+        </li>
+		<li>
+            <defName>Brawler</defName>
+        </li>	
+		<li>
+            <defName>NaturalMood</defName>
+           <degree>1</degree>  
+        </li> 		
+		<li>
+            <defName>NaturalMood</defName>
+           <degree>2</degree>  
+        </li> 
+		   
+	     <li>
+            <defName>Nerves</defName>
+           <degree>1</degree>  
+        </li> 
+	     <li>
+            <defName>Nerves</defName>
+           <degree>2</degree>  
+        </li> 		
+		
+    </disallowedTraits>
+	
+	<forcedTraits>
+        <li>
+		<!-- deppresive nat mood degree 3 -->
+            <defName>NaturalMood</defName>
+           <chance>70</chance>
+           <degree>-2</degree>  
+        </li> 
+		   		   
+		<li>
+		<!-- volatile nerves degree 3 -->
+            <defName>Nerves</defName>
+           <chance>70</chance>
+           <degree>-1</degree>  
+        </li> 
+	</forcedTraits>
+</AlienRace.BackstoryDef>
+
+
+
+
+
+<!--   Cared for slave    9-->
+<AlienRace.BackstoryDef>
+    <defName>BelovedSlave</defName>
+    <title>Beloved Slave</title>
+	<titleShort>Beloved Slave</titleShort>
+    <baseDescription>While [PAWN_nameDef] was unlucky enough to be taken from [PAWN_possessive] homeworld by slavers, [PAWN_pronoun] was lucky enough to have been first sold to a family to act as a caretaker for a kind old man. The old man treated [PAWN_nameDef] well for years and did their best to teach [PAWN_nameDef] some skills that might help [PAWN_objective] survive later on, knowing that [PAWN_nameDef] would be sold off by the family once he died. The old man eventually did die and [PAWN_nameDef] was sold, though now having a few skills the average Gerzee does not possess.</baseDescription>
+   	<slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-20</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-20</amount>	  
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>2</amount>	  
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>3</amount>	  
+      </li>
+       </skillGains>
+	<bioAgeRange>
+        <min>7</min>
+        <max>15</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>2</max>
+    </chronoAgeRange>
+	<spawnCategories>
+	  <li>PeacefulTribe</li>
+ 	  <li>PeacefulTribeTrader</li>
+    </spawnCategories>
+	<workDisables>
+		<li>Cooking</li>
+    </workDisables>
+ <disallowedTraits>
+        <li>
+            <defName>Psychopath</defName>
+        </li>
+        <li>
+            <defName>Bloodlust</defName>
+        </li>
+		<li>
+            <defName>Brawler</defName>
+        </li>	
+    </disallowedTraits>
+</AlienRace.BackstoryDef>
+
+
+
+
+
+
+
+
+
+
+<!-- Chemical worker (carcinoma) 10-->
+
+<AlienRace.BackstoryDef>
+    <defName>ChemSlave</defName>
+    <title>Chem Storage Slave</title>
+	<titleShort>Chem Storage Slave </titleShort>
+    <baseDescription>Mining slavers captured [PAWN_nameDef] from the Gerzee homeworld and sold them to a chemical waste-disposal company. The company would deposit the waste while the workers were still digging out storage spaces, as the money they made from promising such quick project times was more than the costs for buying replacement slaves. [PAWN_nameDef] only survived because cancerous body parts were chopped off early enough to avoid spreading to the rest of the body.</baseDescription>    
+	<slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-20</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-20</amount>	  
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>3</amount>	  
+      </li>
+	  <li>
+        <defName>Mining</defName>
+        <amount>4</amount>	  
+      </li>
+       </skillGains>
+	<bioAgeRange>
+        <min>2</min>
+        <max>15</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+	<spawnCategories>
+	  <li>PeacefulTribe</li>
+	  <li>VengTribe</li>
+    </spawnCategories>
+	<workDisables>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+    </workDisables>
+ <disallowedTraits>
+        <li>
+            <defName>Psychopath</defName>
+        </li>
+        <li>
+            <defName>Bloodlust</defName>
+        </li>
+		<li>
+            <defName>Brawler</defName>
+        </li>			
+    </disallowedTraits>	
+	<forcedTraits>
+        <li>
+		<!-- deppresive nat mood degree 3 -->
+            <defName>NaturalMood</defName>
+           <chance>65</chance>
+           <degree>-1</degree>  
+        </li> 
+	</forcedTraits>
+	<forcedHediffs>
+      <li>WoodenFoot</li>	
+      <li>PegLeg</li>	
+      <li>SimpleProstheticArm</li>	
+	  </forcedHediffs>
+</AlienRace.BackstoryDef>
+
+
+
+<!-- research slave 11-->
+
+<AlienRace.BackstoryDef>
+    <defName>ResearchSlave</defName>
+    <title>Research Slave</title>
+  <titleShort>Research Slave</titleShort>
+    <baseDescription>Mining slavers captured [PAWN_nameDef] from the Gerzee homeworld and sold them to a chemical waste-disposal company. Luckily for [PAWN_objective], a researcher at the site took [PAWN_objective] as their personal worker. [PAWN_nameDef] spent  most of [PAWN_objective] time moving heavy objects, but overheard enough conversations between the scientists to get a basic idea of how research works (a rare skill among the Gerzee).</baseDescription>    
+  <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-20</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-20</amount>    
+      </li>
+       </skillGains>
+  <bioAgeRange>
+        <min>2</min>
+        <max>15</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+  <spawnCategories>
+    <li>PeacefulTribe</li>
+    <li>VengTribe</li>
+    </spawnCategories>
+  <workDisables>
+    <li>Cooking</li>
+    </workDisables>
+ <disallowedTraits>
+        <li>
+            <defName>Psychopath</defName>
+        </li>
+        <li>
+            <defName>Bloodlust</defName>
+        </li>
+    <li>
+            <defName>Brawler</defName>
+        </li>     
+    </disallowedTraits> 
+</AlienRace.BackstoryDef>
+
+
+
+
+<!-- cook slave 12-->
+
+<AlienRace.BackstoryDef>
+    <defName>CookSlave</defName>
+    <title>Cook Slave</title>
+  <titleShort>Cook Slave</titleShort>
+    <baseDescription>Slavers captured [PAWN_nameDef] and entertained themselves with the somewhat uncommon practice of making [PAWN_objective] the "chef" for the slave food. Seeing as how Gerzee can't process cooked foods nor even try to eat cooked foods without becoming violently ill, this meant [PAWN_nameDef] could only learn by experimenting and seeing the results of what [PAWN_pronoun] had made. Eventually this led to [PAWN_objective] becoming one of the rare Gerzee that could actually cook, though the experience of making that many slaves ill (or worse) from [PAWN_possessive] first dishes left [PAWN_nameDef] a little neurotic.</baseDescription>    
+  <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-20</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-20</amount>    
+      </li>
+	        <li>
+        <defName>Cooking</defName>
+        <amount>2</amount>    
+      </li>
+    <li>
+        <defName>Intellectual</defName>
+        <amount>1</amount>    
+      </li>
+       </skillGains>
+  <bioAgeRange>
+        <min>2</min>
+        <max>15</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+  <spawnCategories>
+    <li>PeacefulTribe</li>
+    <li>VengTribe</li>
+    </spawnCategories>
+ <disallowedTraits>
+        <li>
+            <defName>Psychopath</defName>
+        </li>
+        <li>
+            <defName>Bloodlust</defName>
+        </li>
+    <li>
+            <defName>Brawler</defName>
+        </li>     
+    </disallowedTraits> 
+      <forcedTraits>
+        <li>	  
+            <defName>Neurotic</defName>	  
+           <degree>1</degree>
+        </li>	  
+        <li>
+    <!-- put neutoritc here instead -->
+            <defName>NaturalMood</defName>
+           <chance>55</chance>
+           <degree>-1</degree>  
+        </li> 
+  </forcedTraits>
+
+</AlienRace.BackstoryDef>
+
+
+
+
+
+
+
+<!-- TOUGH PEACEFUL TRIBE -->
+
+
+<!--      Miner slave revolt 1-->
+
+<AlienRace.BackstoryDef>
+    <defName>MineRevoltSlave</defName>
+    <title>Mine Revolter</title>
+	<titleShort>Mine Revolter</titleShort>
+    <baseDescription>Mining slavers captured [PAWN_nameDef] from the Gerzee homeworld, using [PAWN_objective]’s strength to quickly smash through rock. Being one of the few slave types who get to practice hitting things, the rare Gerzee that manage to overpower their slavers tend to be miners. [PAWN_nameDef] was a part of a group of such miners who managed to break themselves out, bringing along a few other Gerzee slaves with them.</baseDescription>    
+	<slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-20</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>	  
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>-10</amount>	  
+      </li>
+	  <li>
+        <defName>Mining</defName>
+        <amount>4</amount>	  
+      </li>
+	  <li>
+        <defName>Plants</defName>
+        <amount>2</amount>	  
+      </li>
+       </skillGains>
+	<bioAgeRange>
+        <min>3</min>
+        <max>15</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+	<spawnCategories>
+	  <li>ToughPeacefulTribe</li>	
+  	  <li>WarriorPeacefulTribe</li>
+    </spawnCategories>
+	<workDisables>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+    </workDisables>
+ <disallowedTraits>
+        <li>
+            <defName>Psychopath</defName>
+        </li>
+        <li>
+            <defName>Bloodlust</defName>
+        </li>
+    </disallowedTraits>
+</AlienRace.BackstoryDef>
+
+
+
+<!-- farmer escapee   2-->
+
+<AlienRace.BackstoryDef>
+    <defName>FarmEscapeSlave</defName>
+    <title>Farm Escapee</title>
+	<titleShort>Farm Escapee</titleShort>
+<baseDescription>Considering the Gerzee lifestyle of constantly foraging for plants, slavers had captured [PAWN_nameDef] and used [PAWN_objective] as farm labor for the slaver base. [PAWN_pronoun] would spend all day working the fields, being given little time to do anything else. What [PAWN_objective] captors didn’t notice was that [PAWN_pronoun] was using [PAWN_objective] woodcutting and land-breaking chores as practice for fighting. Eventually [PAWN_pronoun] knocked out the field guard watching [PAWN_objective], and escaped into the wild.</baseDescription>    
+	<slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-15</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>	  
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>-10</amount>	  
+      </li>
+	  <li>
+        <defName>Plants</defName>
+        <amount>3</amount>	  
+      </li>
+       </skillGains>
+	<bioAgeRange>
+        <min>3</min>
+        <max>15</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+	<spawnCategories>
+	  <li>ToughPeacefulTribe</li>	
+  	  <li>WarriorPeacefulTribe</li>
+    </spawnCategories>
+	<workDisables>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+    </workDisables>
+ <disallowedTraits>
+        <li>
+            <defName>Kind</defName>
+        </li>
+        <li>
+            <defName>Wimp</defName>
+        </li>
+		<li>
+            <defName>Psychopath</defName>
+        </li>
+		<li>
+            <defName>Bloodlust</defName>
+        </li> 
+    </disallowedTraits>
+
+</AlienRace.BackstoryDef>
+
+
+
+
+<!--      Volunteer Guard   3-->
+
+<AlienRace.BackstoryDef>
+    <defName>VolunteerGuardSlave</defName>
+    <title>Volunteer Guard</title>
+	<titleShort>Volunteer Guard</titleShort>
+    <baseDescription>[PAWN_nameDef] was broken out of a slave camp by fellow slaves. Despite not having much experience with fighting, [PAWN_pronoun] quickly volunteered to become a defender of their newly formed tribe, knowing that the tribe would not survive this rimworld using the old ways of survival from the homeworld.</baseDescription>    
+	<slot>Childhood</slot>
+    <skillGains>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>-10</amount>	  
+      </li>
+	  <li>
+        <defName>Plants</defName>
+        <amount>2</amount>	  
+      </li>
+       </skillGains>
+	<bioAgeRange>
+        <min>3</min>
+        <max>10</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+	<spawnCategories>
+	  <li>ToughPeacefulTribe</li>	
+    </spawnCategories>
+	<workDisables>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+    </workDisables>
+ <disallowedTraits>
+        <li>
+            <defName>Psychopath</defName>
+        </li>
+        <li>
+            <defName>Bloodlust</defName>
+        </li>
+    </disallowedTraits>
+</AlienRace.BackstoryDef>
+
+
+
+
+<!-- Tribe Ex Elder   4-->
+
+<AlienRace.BackstoryDef>
+    <defName>ExElder</defName>
+    <title>Ex-Elder</title>
+   <titleShort>Ex-Elder</titleShort>
+    <baseDescription>The heads of Gerzee family packs are chosen based purely on age. Whichever member of the group is oldest at the time becomes the leader until they die, as their skills to survive all the predators of their world for so long makes them revered. [PAWN_nameDef] was one such elder, though sadly [PAWN_pronoun] was eventually caught by slavers. As Gerzee not on their homeworld are all there due to having failed to escape slavers (aka predators), the leadership system no longer applies to rimworld Gerzee.</baseDescription>    
+	<slot>Childhood</slot>
+    <skillGains>
+	      <li>
+        <defName>Shooting</defName>
+        <amount>-20</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-5</amount>    
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>-5</amount>	  
+      </li>
+	  <li>
+        <defName>Plants</defName>
+        <amount>2</amount>	  
+      </li>
+       </skillGains>
+	<bioAgeRange>
+        <min>10</min>
+        <max>16</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+	<spawnCategories>
+	  <li>ToughPeacefulTribe</li>
+	  <li>WarriorPeacefulTribe</li>	  
+    </spawnCategories>
+	<workDisables>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+    </workDisables>
+ <disallowedTraits>
+        <li>
+            <defName>Psychopath</defName>
+        </li>
+        <li>
+            <defName>Bloodlust</defName>
+        </li>
+    </disallowedTraits>
+		<forcedTraits>
+        <li>
+            <defName>Nimble</defName>
+           <chance>75</chance> 
+        </li> 
+		<li>
+            <defName>Tough</defName>
+           <chance>35</chance> 
+        </li> 
+	</forcedTraits>
+	
+</AlienRace.BackstoryDef>
+
+
+
+
+
+
+
+<!-- Peace and vengence warrior stories -->
+
+
+<!-- Pit fighter  1-->
+
+<AlienRace.BackstoryDef>
+    <defName>PitFighterSlave</defName>
+    <title>Pit Fighter</title>
+	<titleShort>Pit Fighter</titleShort>
+    <baseDescription>[PAWN_nameDef] was captured by slavers at an early age and to be used as an easy sacrifice in gladiator fights. Unlike most Gerzee who die off in such exhibitions, [PAWN_nameDef] turned out to be very good at fighting. And so [PAWN_pronoun] was forced to fight for years, being transported all over the galaxy as a special treat for gladiator audiences.</baseDescription>    
+	<slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>8</amount>	  
+      </li>
+       </skillGains>
+	<bioAgeRange>
+        <min>8</min>
+        <max>15</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+	<spawnCategories>
+	  <li>VengBeserker</li>
+	  <li>WarriorPeacefulTribe</li>
+    </spawnCategories>
+	<workDisables>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+		<li>Caring</li>
+		<li>Social</li>		
+		<li>Artistic</li>
+		<li>Crafting</li>
+        <li>ManualDumb</li>
+    </workDisables>
+	
+ <disallowedTraits>
+        <li>
+            <defName>Kind</defName>
+        </li>
+        <li>
+            <defName>Wimp</defName>
+        </li>
+    </disallowedTraits>
+	
+	<forcedTraits>
+        <li>
+            <defName>Bloodlust</defName>
+        </li> 
+		<li>
+            <defName>Psychopath</defName>
+           <chance>30</chance> 
+        </li> 
+	</forcedTraits>
+	
+</AlienRace.BackstoryDef>
+
+
+
+
+
+
+
+
+
+
+<!--VENGFUL-->
+
+
+<!-- Miner escapee 1-->
+
+<AlienRace.BackstoryDef>
+    <defName>MineVengSlave</defName>
+    <title>Mine Slayer</title>
+	<titleShort>Mine Slayer </titleShort>
+<baseDescription>Mining slavers captured [PAWN_nameDef] from the Gerzee homeworld, using [PAWN_objective]’s strength to quickly smash through rock for many years. Being one of the few slave types who get to practice hitting things, the rare Gerzee that manage to overpower their slavers tend to be miners. [PAWN_nameDef] was one such example, breaking themselves out and killing a couple of captors along the way. [PAWN_pronoun] decided [PAWN_pronoun] quite liked killing such slavers, and made it [PAWN_objective] mission to kill as many as possible.</baseDescription>    
+	<slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-5</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>5</amount>	  
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>-10</amount>	  
+      </li>
+	  <li>
+        <defName>Mining</defName>
+        <amount>4</amount>	  
+      </li>
+	  <li>
+        <defName>Plants</defName>
+        <amount>2</amount>	  
+      </li>
+       </skillGains>
+	<bioAgeRange>
+        <min>3</min>
+        <max>15</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+	<spawnCategories>
+	  <li>VengBeserker</li>	
+    </spawnCategories>
+	<workDisables>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+    </workDisables>
+ <disallowedTraits>
+        <li>
+            <defName>Kind</defName>
+        </li>
+        <li>
+            <defName>Wimp</defName>
+        </li>
+    </disallowedTraits>
+	
+	<forcedTraits>
+        <li>
+            <defName>Bloodlust</defName>
+           <chance>50</chance> 
+        </li> 
+		<li>
+            <defName>Psychopath</defName>
+           <chance>30</chance> 
+        </li> 
+	</forcedTraits>
+	
+</AlienRace.BackstoryDef>
+
+
+
+<!-- farmer veng slaver   2-->
+
+<AlienRace.BackstoryDef>
+    <defName>FarmVengSlave</defName>
+    <title>Farm Slayer</title>
+	<titleShort>Farm Slayer</titleShort>
+<baseDescription>Considering the Gerzee lifestyle of constantly foraging for plants, slavers had captured [PAWN_nameDef] and used [PAWN_objective] as farm labor for the slaver base. [PAWN_pronoun] would spend all day working the fields, being given little time to do anything else. What [PAWN_objective] captors didn’t notice was that [PAWN_pronoun] was using [PAWN_objective] woodcutting and land-breaking chores as practice for cutting and breaking people. Eventually [PAWN_pronoun] killed the field guard watching [PAWN_objective], and escaped into the wild.</baseDescription>    
+	<slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-5</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>5</amount>	  
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>-10</amount>	  
+      </li>
+	  <li>
+        <defName>Mining</defName>
+        <amount>4</amount>	  
+      </li>
+	  <li>
+        <defName>Plants</defName>
+        <amount>2</amount>	  
+      </li>
+       </skillGains>
+	<bioAgeRange>
+        <min>3</min>
+        <max>15</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+	<spawnCategories>
+	  <li>VengBeserker</li>	
+    </spawnCategories>
+	<workDisables>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+    </workDisables>
+ <disallowedTraits>
+        <li>
+            <defName>Kind</defName>
+        </li>
+        <li>
+            <defName>Wimp</defName>
+        </li>
+    </disallowedTraits>
+	
+	<forcedTraits>
+		<li>
+            <defName>Psychopath</defName>
+           <chance>30</chance> 
+        </li>
+		<li>
+            <defName>Bloodlust</defName>
+           <chance>50</chance> 
+        </li> 
+
+	</forcedTraits>
+	
+</AlienRace.BackstoryDef>
+
+
+
+
+<!--  tortured veng slave   3 -->
+<AlienRace.BackstoryDef>
+    <defName>TortureVengSlave</defName>
+    <title>Tortured Slayer</title>
+   <titleShort>Tortured Slayer </titleShort>
+	<baseDescription>[PAWN_nameDef] was already unlucky enough to have been captured by a small group of slavers and taken from [PAWN_possessive] homeworld. Unfortunately, those slavers were particularly brutal as well, and took joy from torturing [PAWN_objective]. During one particular day of torture something in [PAWN_nameDef] snapped and against the very passive Gerzee nature, [PAWN_pronoun] beat all of [PAWN_objective] captors to death.  Upon discovering [PAWN_pronoun] was stranded on a rimworld, [PAWN_pronoun] decided to spend [PAWN_objective] time hunting down potential slavers.</baseDescription>
+	<slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-20</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>	  
+      </li>
+       </skillGains>
+	<bioAgeRange>
+        <min>2</min>
+        <max>15</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+	<spawnCategories>
+	  <li>VengBeserker</li>	
+    </spawnCategories>
+	<workDisables>
+		<li>Intellectual</li>
+		<li>Cooking</li>
+		<li>Social</li>
+		<li>Caring</li>
+    </workDisables>
+ <disallowedTraits>	
+		<li>
+            <defName>NaturalMood</defName>
+           <degree>1</degree>  
+        </li> 		
+		<li>
+            <defName>NaturalMood</defName>
+           <degree>2</degree>  
+        </li> 
+		   
+	     <li>
+            <defName>Nerves</defName>
+           <degree>1</degree>  
+        </li> 
+	     <li>
+            <defName>Nerves</defName>
+           <degree>2</degree>  
+        </li> 		
+		        <li>
+            <defName>Kind</defName>
+        </li>
+        <li>
+            <defName>Wimp</defName>
+        </li>
+    </disallowedTraits>
+	
+	<forcedTraits>
+        <li>
+		<!-- deppresive nat mood degree 3 -->
+            <defName>NaturalMood</defName>
+           <chance>70</chance>
+           <degree>-2</degree>  
+        </li> 
+		   		   
+		<li>
+		<!-- volatile nerves degree 3 -->
+            <defName>Nerves</defName>
+           <chance>70</chance>
+           <degree>-1</degree>  
+        </li> 
+		<li>
+            <defName>Psychopath</defName>
+           <chance>50</chance> 
+        </li> 
+	</forcedTraits>
+
+</AlienRace.BackstoryDef>
+
+
+
+
+<!-- escaped soldier experiment (bionics etc) 4 -->
+
+<AlienRace.BackstoryDef>
+    <defName>GerzeeSoldierExperiment</defName>
+    <title>Gerzee Experiment</title>
+	<titleShort>Gerzee Experiment</titleShort>
+    <baseDescription>With Gerzee being of considerable size and strength, they are often experimented on by shady military corporations as potential soldiers. [PAWN_nameDef] was a part of a one such secret programs, having received training in combat and having body parts replaced to see how it could enhance such a new type of soldier. Unfortunately for the scientists, the experiment worked a little too well. [PAWN_nameDef] and a few other soldier experiments managed to wipe out the entire compound, and escaped into the rimworld wilderness.</baseDescription>    
+	<slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>7</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>10</amount>	  
+      </li>
+       </skillGains>
+	<bioAgeRange>
+        <min>8</min>
+        <max>15</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>2</min>
+        <max>7</max>
+    </chronoAgeRange>
+	<spawnCategories>
+	  <li>VengAltered</li>		
+	  </spawnCategories>
+    <forcedHediffs>
+      <li>SimpleProstheticLeg</li>
+      <li>BionicSpine</li>
+      <li>BionicLeg</li>
+	  <li>CochlearImplant</li>
+      <li>PowerClaw</li>
+    </forcedHediffs>
+	<workDisables>
+        <li>Animals</li>
+		<li>ManualSkilled</li>
+		<li>Caring</li>
+		<li>Social</li>
+		<li>Intellectual</li>
+		<li>Artistic</li>
+		<li>Crafting</li>
+		<li>Cooking</li>
+		<li>PlantWork</li>
+ 		<li>Mining</li>
+		<li>Cleaning</li>
+		</workDisables>
+
+ <disallowedTraits>
+        <li>
+            <defName>Kind</defName>
+        </li>
+        <li>
+            <defName>Wimp</defName>
+        </li>
+    </disallowedTraits>
+	
+	
+<forcedTraits>
+        <li>
+            <defName>Tough</defName>
+        </li>
+        <li>
+            <defName>Bloodlust</defName>
+        </li> 
+</forcedTraits>
+	
+</AlienRace.BackstoryDef>
+
+
+
+
+
+<!-- SLAVE -->
+
+ <!--   Gerzee slave    1  -->
+<AlienRace.BackstoryDef>
+   <defName>GerzeeNewSlave</defName>
+    <title>New Slave</title>
+	<titleShort>New Slave</titleShort>
+    <baseDescription>[PAWN_nameDef] is a recent capture by slavers. [PAWN_pronoun] hasn’t gone through much hardship, but [PAWN_pronoun] also hasn’t learned any particular skills. Though since [PAWN_pronoun] just recently came from a typical Gerzee life of foraging for food (and running from predators), [PAWN_pronoun] hasn’t lost any of [PAWN_objective] skill with plants yet.</baseDescription>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-20</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-20</amount>	  
+      </li>
+	  <li>
+        <defName>Plants</defName>
+        <amount>4</amount>	  
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>-10</amount>	  
+      </li>
+       </skillGains>
+	<bioAgeRange>
+        <min>1</min>
+        <max>19</max>
+    </bioAgeRange>
+    <chronoAgeRange>
+        <min>0</min>
+        <max>3</max>
+    </chronoAgeRange>
+	   
+	<spawnCategories>
+	  <li>NewSlave</li>	
+    </spawnCategories>
+			
+	<disallowedTraits>
+        <li>
+            <defName>Psychopath</defName>
+        </li>
+        <li>
+            <defName>Bloodlust</defName>
+        </li>
+		<li>
+            <defName>Brawler</defName>
+        </li>	
+    </disallowedTraits>
+	
+	<workDisables>
+		<li>Cooking</li>
+		<li>Intellectual</li>
+    </workDisables>
+	
+</AlienRace.BackstoryDef>
+
+
+
+</Defs>
+
+

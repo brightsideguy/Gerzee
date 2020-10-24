@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.RaceSettings>
+	<defName>GerzeeRaceSettings</defName>
+	<pawnKindSettings>
+		<alienslavekinds>
+			<li>
+				<kindDefs>
+	  <li>GerzeeSlave</li>
+				</kindDefs>
+				<chance>25.0</chance>
+			</li>
+		</alienslavekinds>
+		
+		<alienrefugeekinds>
+			<li>
+				<kindDefs>
+	  <li>GerzeeTribal</li>
+	  <li>GerzeeToughExSlave</li>
+	  <li>GerzeeBeserker</li>
+	  <li>GerzeeSlave</li>
+	  <li>GerzeeSpaceRefugee</li>
+				</kindDefs>
+				<chance>5.0</chance>
+			</li>
+		</alienrefugeekinds>
+		<alienwandererkinds>
+			<li>
+				<pawnKindEntries>
+					<li>
+						<kindDefs>
+	  <li>GerzeeTribal</li>
+	  <li>GerzeeToughExSlave</li>
+	  <li>GerzeeSlave</li>
+						</kindDefs>
+						<chance>15.0</chance>
+					</li>
+				</pawnKindEntries>
+				<factionDefs>
+					<li>PlayerColony</li> 
+				</factionDefs>
+			</li>
+		</alienwandererkinds>
+		<startingColonists>
+			<li>
+				<pawnKindEntries>
+					<li>
+						<kindDefs>
+							<li>GerzeeColonist</li>
+						</kindDefs>
+						<chance>15.0</chance>
+					</li>
+				</pawnKindEntries>
+				<factionDefs>
+					<li>PlayerColony</li>
+				</factionDefs>
+			</li>
+			<li>
+				<pawnKindEntries>
+					<li>
+						<kindDefs>
+							<li>GerzeeColonist</li>
+						</kindDefs>
+						<chance>15.0</chance>
+					</li>
+				</pawnKindEntries>
+				<factionDefs>
+					<li>PlayerTribe</li>
+				</factionDefs>
+			</li>
+		</startingColonists>
+	</pawnKindSettings>
+</AlienRace.RaceSettings>
+
+</Defs>

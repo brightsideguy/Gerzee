@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+	<defName>GerzeeRace</defName>
+	<label>Gerzee</label>
+	<description>A fairly primitive race, the Gerzee mostly spend their lives foraging for plants, running from large predators, and socializing with the family that have not yet been eaten by those large predators. Though the Gerzee tower in size over most humanoid species, being a fairly small and herbivorous prey species on their home planet means they’ve evolved to run at the first sign of danger. This timid nature and their comparative strength have made them attractive stock for space slavers, and so the Gerzee have just started to be introduced to modern technologies as they deal with these foreign attacks.
+
+With their four eyes on top of their flat head, bulky bodies, and large arms, most humanoid equipment simply doesn’t fit the Gerzee physique. They’re only able to squeeze into some loose or adjustable clothing (e.g. parkas, dusters, masks, flak gear), handle some of the “larger” melee weapons (e.g. spears, horns, swords), and use ranged weapons that don’t require “normal-sized” fingers to pull the trigger (i.e. a minigun).
+
+				
+
+Another technology that surprisingly doesn’t work for the Gerzee is the act of cooking food. However, it’s unclear as to why cooking plants makes them inedible for the Gerzee biology, since slavers don’t mind feeding them cheap hay and glitterworlds have not been interested in researching the answer for such a primitive species.</description>
+<!-- 	<description></description> -->
+ <!--   <inspectorTabs>
+        <li>ITab_Pawn_Health</li>
+        <li>ITab_Pawn_Needs</li>
+        <li>ITab_Pawn_Character</li>
+        <li>ITab_Pawn_Training</li>
+        <li>ITab_Pawn_Gear</li>
+        <li>ITab_Pawn_Guest</li>
+        <li>ITab_Pawn_Prisoner</li>
+        <li>ITab_Pawn_Social</li>
+        <li>ITab_Pawn_Log</li>
+        <li>ITab_Pawn_FormingCaravan</li>
+    </inspectorTabs>-->
+	<statBases>
+      <MarketValue>5000</MarketValue>
+<!-- adjusting movespeed 4.6 to 5.5-->
+      <MoveSpeed>5.5</MoveSpeed>
+<!-- flamability 1.0 to 1.5... good ol fur-->
+      <Flammability>1.5</Flammability>
+<!-- from 20/30 to 30/45 -->
+      <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+      <ComfyTemperatureMax>15</ComfyTemperatureMax>
+	  
+	  <MeleeDPS>2</MeleeDPS>
+	  
+	  
+			  <LeatherAmount>60</LeatherAmount>
+
+
+<!--breaking food poison chance -->
+             <FoodPoisonChance>0.001</FoodPoisonChance>
+<!--social -->
+			  <NegotiationAbility>0.9</NegotiationAbility>
+			  <TradePriceImprovement>1</TradePriceImprovement>
+			  <SocialImpact>1.05</SocialImpact>
+			  
+<!--violence -->
+			  <HuntingStealth>0.5</HuntingStealth>
+
+
+<!--foragers -->
+			  <CookSpeed>0.3</CookSpeed>
+			  <ButcheryFleshSpeed>0.3</ButcheryFleshSpeed>
+			  <ButcheryFleshEfficiency>0.3</ButcheryFleshEfficiency>
+			  
+<!--primative -->
+			  <ImmunityGainSpeed>1.5</ImmunityGainSpeed>		  
+			  <DrugCookingSpeed>0.9</DrugCookingSpeed>
+			  <ResearchSpeed>0.7</ResearchSpeed>
+			  <TailoringSpeed>0.8</TailoringSpeed>
+			  <SmeltingSpeed>0.95</SmeltingSpeed>
+			  <MedicalTendQuality>0.8</MedicalTendQuality>
+			  <MedicalSurgerySuccessChance>0.9</MedicalSurgerySuccessChance>
+
+
+<!--animal-like -->
+			  <PsychicSensitivity>1.20</PsychicSensitivity>
+			  <HungerRateMultiplier>1.2</HungerRateMultiplier>
+			  <TrainAnimalChance>1.15</TrainAnimalChance>
+			  <TameAnimalChance>1.15</TameAnimalChance>
+			  <SmoothingSpeed>1.2</SmoothingSpeed>
+			  <AnimalGatherSpeed>1.2</AnimalGatherSpeed>			  
+              <MiningSpeed>1.2</MiningSpeed>
+
+	      <MeleeDodgeChance>0</MeleeDodgeChance>
+
+	  
+    </statBases>
+
+
+
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <!-- 8.2 to 14 -->
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <!-- 14 to 21 -->
+              <amount>21</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <!-- 8.2 to 12 -->
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <!-- 14 to 21 -->
+              <amount>21</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+	  
+	  <!-- need to figured out secondary attack capacities
+	  <li>
+        <label>shoulder rush</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>1</cooldownTime>
+        <linkedBodyPartsGroup>Shoulders</linkedBodyPartsGroup>
+        <chanceFactor>0.99</chanceFactor>
+      </li>
+	  -->
+	  
+
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <!-- 5 to 7 -->
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <!-- .2 to .1 -->
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+    </tools>
+
+    <race>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <!-- 80 to 30 -->
+      <lifeExpectancy>18</lifeExpectancy>
+      <nameCategory>HumanStandard</nameCategory>
+      <body>Gerzee</body>
+      <!-- 1 to 1.7 -->
+      <baseBodySize>1.7</baseBodySize>
+      <!-- 1 to 1.5 -->
+      <baseHealthScale>1.5</baseHealthScale>
+	  
+    <!--   <foodType>OmnivoreHuman</foodType>  -->
+    <!--   <foodType>VegetarianRoughAnimal</foodType>  -->	
+    <foodType>VegetarianRoughAnimal</foodType>
+
+
+	<useLeatherFrom>Muffalo</useLeatherFrom>
+	  
+	  
+	  <!-- 45 to 25 -->
+      <gestationPeriodDays>17</gestationPeriodDays>
+      <meatMarketValue>0.8</meatMarketValue>
+      <!-- 0.20 to .02 -->
+      <manhunterOnDamageChance>0.02</manhunterOnDamageChance>
+      <!-- 0.20 to 0.01 -->
+      <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 0.5)</li>
+          <!-- 1.01/0.02 to 2/1 -->
+          <li>(2,0.5)</li>
+          <li>(3, 0.2)</li>
+          <li>(4, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>ToddlerStageGerzee</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>ToddlerStageGerzee</def>
+          <minAge>0.2</minAge>
+        </li>
+        <li>
+          <def>ChildStageGerzee</def>
+          <minAge>0.5</minAge>
+        </li>
+        <li>
+          <def>TeenStageGerzee</def>
+          <minAge>1.2</minAge>
+        </li>
+        <li>
+          <def>AdultStageGerzee</def>
+          <minAge>2.5</minAge>
+        </li>
+        <li>
+          <def>ElderStageGerzee</def>
+          <minAge>16</minAge>
+        </li>
+        <li>
+          <def>AncientStageGerzee</def>
+          <minAge>18</minAge>
+        </li>		
+		
+		
+		
+		
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+        <points>
+          <li>(1,0)</li>
+          <li>(2,30)</li>
+          <li>(3,90)</li>
+          <li>(5,90)</li>
+          <li>(7,30)</li>
+          <li>(9,90)</li>
+          <li>(11,30)</li>		  
+          <li>(13,18)</li>
+          <li>(16,10)</li>
+          <li>(17,3)</li>
+          <li>(18,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>OrganicStandard</li>
+        <li>Human</li>
+      </hediffGiverSets>
+    </race>
+
+
+
+	<alienRace>
+		<generalSettings>
+			<humanRecipeImport>true</humanRecipeImport>
+			<allowHumanBios>true</allowHumanBios>
+			<alienPartGenerator>
+				<aliencrowntypes>
+						<!-- Average_Normal -->
+					<li>Average_Normal</li>
+					<!-- <li>Head_Sharp</li>
+					<li>Head_Round</li>
+					<li>Head_Flat</li>
+					<li>Head_Classic</li>
+					<li>Head_Cobra_Sharp</li>
+					<li>Head_Cobra_Round</li>
+					<li>Head_Cobra_Flat</li>
+					<li>Head_Cobra_Classic</li>  -->
+				</aliencrowntypes>
+
+		<!-- not sure if this is real -->		
+
+
+				<alienbodytypes>
+					<!--<li>Massive</li> -->
+      <li>Hulk</li>
+    		</alienbodytypes>
+          <!--gendered heads true and false -->
+				<useGenderedHeads>true</useGenderedHeads>
+				<useGenderedBodies>false</useGenderedBodies>
+        <customDrawSize>(1.35, 1.35)</customDrawSize>
+        <customHeadDrawSize>(1, 1)</customHeadDrawSize>
+        <customPortraitDrawSize>(1.35, 1.35)</customPortraitDrawSize>
+        <customPortraitHeadDrawSize>(1, 1)</customPortraitHeadDrawSize>
+
+
+
+        <headOffset>(0, 0.12)</headOffset>
+
+				<alienskincolorgen Class="ColorGenerator_Options">
+					<options>
+						<li>
+							<weight>60</weight>
+							<only>RGBA(0.5,0.9,1,1)</only>
+						</li>
+						
+						<li>
+							<weight>40</weight>
+							<only>RGBA(0.1,0.9,1,1)</only>
+						</li>
+						
+						<li>
+							<weight>40</weight>
+							<only>RGBA(1,0.9,1,1)</only>
+						</li>						
+  
+					</options>
+
+				</alienskincolorgen>
+				
+				
+			<alienskinsecondcolorgen Class="ColorGenerator_Options">
+                <options>
+						<li>
+							<weight>60</weight>
+							<only>RGBA(0.02,0.79,0.93,1)</only>
+						</li>
+						<li>
+							<weight>20</weight>
+							<only>RGBA(0.12,0.67,0.81,1)</only>
+						</li>
+						<li>
+							<weight>20</weight>
+							<only>RGBA(0.2,0.67,0.79,1)</only>
+						</li>
+                </options>
+            </alienskinsecondcolorgen>
+			
+			
+			
+				
+				<bodyAddons>
+					<li>
+						<path>Gerzee/Eye/LF/EyeLF</path>
+						<bodyPart>EyeStalkLF</bodyPart>
+						<inFrontOfBody>true</inFrontOfBody>
+						<useSkinColor>true</useSkinColor>
+						
+						<offsets>
+							<south>
+								<bodyTypes>
+							<!--		<Hulk>(-0.4,0.68)</Hulk> -->
+									<Hulk>(-0.42,0.68)</Hulk>
+								</bodyTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Hulk>(0.0,1.0)</Hulk>
+								</bodyTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Hulk>(-0.5,0.68)</Hulk>
+								</bodyTypes>
+							</east>
+						</offsets>    
+					</li>
+					
+					<li>
+						<path>Gerzee/Eye/RF/EyeRF</path>
+						<bodyPart>EyeStalkRF</bodyPart>
+						<inFrontOfBody>true</inFrontOfBody>
+						<useSkinColor>true</useSkinColor>
+						<drawnInBed>true</drawnInBed>
+
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Hulk>(-0.42,0.68)</Hulk>
+								</bodyTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Hulk>(0.0,1.0)</Hulk>
+								</bodyTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Hulk>(-0.5,0.68)</Hulk>
+								</bodyTypes>
+							</east>
+						</offsets>    
+					</li>
+					
+					
+					
+					
+					<li>
+						<path>Gerzee/Eye/LR/EyeLR</path>
+						<bodyPart>EyeStalkLR</bodyPart>
+						<inFrontOfBody>false</inFrontOfBody>
+						<useSkinColor>true</useSkinColor>
+						<drawnInBed>true</drawnInBed>
+
+
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Hulk>(-0.42,0.68)</Hulk>
+								</bodyTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Hulk>(0.0,1.0)</Hulk>
+								</bodyTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Hulk>(-0.5,0.68)</Hulk>
+								</bodyTypes>
+							</east>
+						</offsets>    
+					</li>
+					
+					
+					
+					
+					<li>
+						<path>Gerzee/Eye/RR/EyeRR</path>
+						<bodyPart>EyeStalkRR</bodyPart>
+						<inFrontOfBody>false</inFrontOfBody>
+						<useSkinColor>true</useSkinColor>
+						<drawnInBed>true</drawnInBed>
+
+						
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Hulk>(-0.42,0.68)</Hulk>
+								</bodyTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Hulk>(0.0,1.0)</Hulk>
+								</bodyTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Hulk>(-0.5,0.68)</Hulk>
+								</bodyTypes>
+							</east>
+						</offsets>    
+					</li>
+						
+					
+					
+					
+					
+					
+					<!-- try an extra eye layer 
+					
+					<li>
+						<path>Gerzee/Eye/RR/CoverEyeRR</path>
+						<bodyPart>EyeStalkRR</bodyPart>
+						<inFrontOfBody>false</inFrontOfBody>
+						<useSkinColor>true</useSkinColor>
+						<drawnInBed>true</drawnInBed>
+						
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Hulk>(-0.42,0.68)</Hulk>
+								</bodyTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Hulk>(0.0,1.0)</Hulk>
+								</bodyTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Hulk>(-0.5,0.68)</Hulk>
+								</bodyTypes>
+							</east>
+						</offsets>    
+					</li>
+					 extra eye layer -->
+					
+					
+					
+					<li>
+						<path>Gerzee/Eye/RR/HiddenEyeRR</path>
+						<bodyPart>EyeStalkRR</bodyPart>
+						<inFrontOfBody>false</inFrontOfBody>
+						<useSkinColor>true</useSkinColor>
+						<drawnInBed>true</drawnInBed>
+						<layerOffset>-0.3</layerOffset>
+
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Hulk>(-0.42,0.68)</Hulk>
+								</bodyTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Hulk>(0.0,1.0)</Hulk>
+								</bodyTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Hulk>(-0.5,0.68)</Hulk>
+								</bodyTypes>
+							</east>
+						</offsets>    
+					</li>
+					
+					
+					<li>
+						<path>Gerzee/Eye/LR/HiddenEyeLR</path>
+						<bodyPart>EyeStalkLR</bodyPart>
+						<inFrontOfBody>false</inFrontOfBody>
+						<useSkinColor>true</useSkinColor>
+						<layerOffset>-0.3</layerOffset>
+
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Hulk>(-0.42,0.68)</Hulk>
+								</bodyTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Hulk>(0.0,1.0)</Hulk>
+								</bodyTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Hulk>(-0.5,0.68)</Hulk>
+								</bodyTypes>
+							</east>
+						</offsets>    
+					</li>
+					
+					
+				</bodyAddons>
+				
+				
+				
+				
+				
+			</alienPartGenerator>
+
+<!-- Adding in some customized pieces-->
+<!-- 
+            <forcedRaceTraitEntries>
+                <li>
+                    <defname>Nerves</defname>
+                    <degree>3</degree>
+                    <chance>100</chance>
+                    <commonalityMale>100</commonalityMale>
+                    <commonalityFemale>50</commanilityFemale>
+                </li>
+                
+            </forcedRaceTraitEntries>
+-->
+
+
+
+
+        <disallowedTraits>
+               <li>Cannibal</li>
+               <li>Greedy</li>
+		</disallowedTraits>
+
+
+<!--             <factionRelations>
+                <li>
+                    <factions>
+                       <li>FactionExample</li>
+                    </factions>
+                    <goodwill>
+                       <min>-10</min>
+                       <max>10</max>
+                    </goodwill>
+                </li>               
+            </factionRelations>
+-->
+
+<maxDamageForSocialfight>1</maxDamageForSocialfight>
+
+
+<!-- End of some customized pieces-->
+
+
+<!-- later may want to do custom eye pieces?   Eh.  -->
+
+
+<!--<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>-->
+
+
+		</generalSettings>
+		<graphicPaths>
+			<li>
+				<body>Gerzee/Body/</body>
+				<head>Gerzee/Head/</head>
+				<skull>Gerzee/Skull/Skull</skull>
+			</li>
+
+<!--
+            <li>
+                <lifeStageDefs>
+                    <li>NewbornStage</li>
+                </lifeStageDefs>
+				<body>Gerzee/Body/</body>
+            </li>
+
+            <li>
+                <lifeStageDefs>
+                    <li>ChildStageGerzee</li>
+                </lifeStageDefs>
+				<body>Gerzee/Body/</body>
+            </li>		
+	-->		
+			
+		</graphicPaths>
+        <hairSettings>
+            <hasHair>false</hasHair>
+        </hairSettings>
+
+<!-- added -->
+        <thoughtSettings>
+
+            <cannotReceiveThoughts>
+                <li>AteRawFood</li>
+                <li>AteKibble</li>
+                <li>Naked</li>
+                <li>SleepDisturbed</li>
+                <li>AwfulBarrack</li>				
+                <li>AteWithoutTable</li>
+                <li>NeedFood</li>			
+                <li>NeedRoomSize</li>					
+<!--
+
+	
+
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+				-->
+            </cannotReceiveThoughts>
+
+
+            <restrictedThoughts>
+                <li>GerzeeNeedFood</li>
+                <li>GerzeeNeedRoomSize</li>
+            </restrictedThoughts>
+
+
+        </thoughtSettings>
+
+
+
+        <raceRestriction>
+
+            <apparelList>
+            </apparelList>
+			<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+            
+            <whiteApparelList>
+                <li>Apparel_Parka</li>
+                <li>Apparel_Duster</li>
+                <li>Apparel_FlakVest</li>                
+                <li>Apparel_FlakJacket</li>
+                <li>Apparel_WarVeil</li>
+                <li>Apparel_WarMask</li>	
+                <li>Apparel_ShieldBelt</li>
+				
+				
+				
+                <!--Combat Extended (except one i think)-->
+                <li>Apparel_CompositeVest</li>
+                <li>Apparel_TribalBackpack</li>
+				<li>Apparel_Backpack</li>
+				<li>Apparel_TacVest</li>
+
+                <!--Combat Extended shields-->
+				<li>Apparel_NguniShield</li>
+				<li>Apparel_WickerShield</li>
+				<li>Apparel_Scutum</li>
+				<li>Apparel_KiteShield</li>
+				<li>Apparel_CrusaderShield</li>
+				<li>Apparel_RiotShield</li>
+				<li>Apparel_AssaultShield</li>
+
+
+
+				<!--Combat Shields not in CE shields-->
+				<li>Apparel_Aspis</li>
+				<li>Apparel_NordShield</li>
+				<li>Apparel_Pavise</li>
+				<li>Apparel_BucklerShield</li>
+				<li>Apparel_BallisticShield</li>
+				
+
+
+				<!--Vanilla armor expanded-->
+				<li>VAE_Apparel_WoodenArmor</li>
+				<li>VAE_Apparel_TribalPoncho</li>
+				<li>VAE_Apparel_TribalKilt</li>
+				<li>VAE_Apparel_PlateShoulderpads</li>
+				<li>VAE_Apparel_BulletproofVest</li>
+				<li>VAE_Apparel_AdvancedVest</li>
+				<li>VAE_Apparel_HAZMATSuit</li>
+
+
+				<!--Vanilla apparel expanded-->
+			
+			    <li>VAE_Apparel_PeltCoat</li>
+				<li>VAE_Apparel_Apron</li>
+				<li>VAE_Apparel_Cape</li>
+				<li>VAE_Apparel_Skirt</li>
+				<li>VAE_Apparel_BuildersJacket</li>
+				<li>VAE_Apparel_LabCoat</li>
+				
+				<!--XND Survival Tools -->
+			
+			    <li>SurvivalTools_ToolBelt</li>		
+				
+				
+				<!--Dubs Rimkit-->
+			    <li>MedicineBag</li>
+				<li>MedicalKit</li>
+				<li>UltraMedKit</li>
+				<li>DubsRepairKit</li>				
+				
+				
+
+				<!--Simple Slavery-->
+			    <li>Apparel_SlaveCollar_Explosive</li>
+				<li>Apparel_SlaveCollar_Electric</li>
+				<li>Apparel_SlaveCollar_Crypto</li>
+				<li>Apparel_SlaveCollar</li>	
+			    <li>Apparel_SlaveCollar_Tribal</li>
+				
+				
+				
+            </whiteApparelList>
+
+
+            <weaponList>
+			</weaponList>
+			<onlyUseRaceRestrictedWeapons>true</onlyUseRaceRestrictedWeapons>
+
+            <whiteWeaponList>
+                <li>MeleeWeapon_Spear</li>
+			    <li>Weapon_GrenadeFrag</li>
+                <li>Weapon_GrenadeMolotov</li>
+                <li>Weapon_GrenadeEMP</li>
+                <li>Gun_TripleRocket</li>
+                <li>Gun_DoomsdayRocket</li>
+                <li>Bow_Great</li>
+	            <li>ElephantTusk</li>
+                <li>ThrumboHorn</li>
+                <li>Gun_Minigun</li>
+                <li>MeleeWeapon_LongSword</li>
+                <li>MeleeWeapon_Ikwa</li>
+                <li>WoodLog</li>
+		   <!-- <li>Pila</li> -->
+		   
+		   
+				<!--Vanilla Weapons expanded-->
+		   <li>VWE_Gun_RocketLauncher</li>
+		   <li>VWE_Gun_FireExtinguisher</li>
+		   <li>VWE_Tool_Whip</li>
+		   <li>VWE_Throwing_Rocks</li>
+		   <li>VWE_Bow_Long</li>
+		   <li>VWE_Gun_ChargeMinigun</li>
+		   <li>VWE_Gun_ChargeRocketLauncher</li>
+		   <li>VWE_MeleeWeapon_Pickaxe</li>
+		   <li>VWE_MeleeWeapon_Hammer</li>
+		   <li>VWE_MeleeWeapon_BattleAxe</li>		   
+		   <li>VWE_MeleeWeapon_Halberd</li>		   
+		   <li>VWE_MeleeWeapon_Shovel</li>		   	   
+		   <li>VWE_SmokeGrenade</li>		   
+		   <li>VWE_ToxicGrenade</li>		   
+		   <li>VWE_FlashGrenade</li>	
+
+		   
+				<!--XND Survival Tools-->
+		   <li>SurvivalTools_Axe</li>
+		   <li>SurvivalTools_Pickaxe</li>
+		   <li>SurvivalTools_Hammer</li>
+		   <li>SurvivalTools_Sickle</li>
+		   <li>SurvivalTools_Multitool</li>
+
+
+	   	   
+		   <!-- Rimworld of Magic, as requested by a player -->
+		   <li>TM_ElephantSpear</li>
+		   <li>TM_ElephantBow</li>		   
+		   <li>TM_ThrumboAxe</li>		   
+		   <li>TM_ThrumBow</li>		   
+		   <li>TM_DefenderStaff</li>		   
+		   <li>TM_BlazingPowerStaff</li>		   
+		   
+		   
+			<!--Faction Colors-->
+		    <li>MeleeWeapon_Bihander</li>
+			<li>MeleeWeapon_Greataxe</li>
+			<li>MeleeWeapon_Greatmace</li>
+			<li>MeleeWeapon_Lance</li>
+		   
+		   
+		   
+		   				<!--Medieval Madness: Tools of the Trade-->
+			    <li>MM_Pitchfork</li>
+				<li>MM_pickaxe</li>
+				<li>MM_Woodcutteraxe</li>
+				<li>MM_shovel</li>	
+			    <li>MM_scythe</li>
+				<li>MM_mallet</li>
+				<li>MM_polehammer</li>
+				<li>MM_warspear</li>	
+			    <li>MM_pike</li>
+				<li>MM_billhook</li>
+				<li>MM_trident</li>
+				<li>MM_bardiche</li>
+			    <li>MM_greatsword</li>
+				<li>MM_greataxe</li>
+				<li>MM_halberd</li>
+				<li>MM_glaive</li>				
+			    <li>MM_heavymace</li>
+				<li>MM_maul</li>
+				<li>MM_flail_heavy</li>
+				<li>MM_zweihander</li>	
+			    <li>MM_warscythe</li>
+				<li>MM_flamberge</li>
+				<li>MMr_tnet</li>
+			    <li>MMr_harpoon</li>
+				<li>MMr_fbolas</li>
+				<li>MMr_javelin</li>
+			    <li>MMr_firelongbow</li>
+				<li>MMr_crossbow_Siege</li>
+				<li>MMr_clongbow</li>
+				
+				
+		   
+		   
+            </whiteWeaponList>
+			
+
+
+
+
+            <foodList>
+            </foodList>
+			
+			<onlyEatRaceRestrictedFood>true</onlyEatRaceRestrictedFood>
+
+            <whiteFoodList>
+<!--			<li>Plant_Haygrass</li>
+				<li>Plant_Strawberry</li>
+				<li>Plant_Corn</li>
+				<li>Plant_Potato</li>
+				<li>Plant_Rice</li>
+				<li>Plant_SaguaroCactus</li>
+				<li>Plant_Bush</li>
+				<li>Plant_Agave</li>
+				<li>Plant_Ambrosia</li>
+				<li>Plant_Berry</li>
+				<li>Plant_Brambles</li>
+				<li>MealSurvivalPack</li>
+				<li>Glowstool</li>
+			
+-->
+				<li>Kibble</li>	
+				<li>Plant_ShrubLow</li>
+				<li>Bryolux</li>
+				<li>Agarilux</li>
+				<li>Plant_Chokevine</li>
+				<li>Plant_Astragalus</li>
+				<li>Plant_PincushionCactus</li>				
+				<li>Plant_Grass</li>
+				<li>Plant_Dandelion</li>
+				<li>Plant_TallGrass</li> 
+				<li>Plant_Moss</li>
+				<li>Plant_Astragalus</li>
+				
+				
+				<li>MealNutrientPaste</li>
+
+				<li>Hay</li>
+				<li>RawBerries</li>
+				<li>RawCorn</li>
+				<li>RawAgave</li>
+				<li>RawRice</li>
+				<li>RawPotatoes</li>
+				
+				
+				<li>Chocolate</li>
+				<li>Beer</li>
+				<li>GoJuice</li>
+				<li>Luciferium</li>
+				<li>SmokeleafJoint</li>
+				<li>Penoxycyline</li>
+				<li>WakeUp</li>
+				<li>Flake</li>
+				<li>PsychoidPekoe</li>
+				<li>PsychiteTea</li>
+				<li>Yayo</li>		
+
+				<!-- soybeans mod, as requested by a player-->
+				<!-- soymilk defined as MeatRaw in their code... so can't add <li>NHKSHANJVM</li> -->
+				<li>ZDlbctxJNV</li>
+				<li>ULAXMmBuga</li>
+
+		   <!-- SYR Coffee and Tea -->
+		   <li>SyrTea</li>
+		   <li>SyrHotChocolate</li>		   
+		   <li>SyrCoffee</li>		   
+		   <li>SyrRawTea</li>		   
+		   <li>SyrRawCoffee</li>	
+
+
+	
+				<!--Survivalist's Additions-->
+			    <li>SRV_Turnip</li>
+				<li>SRV_Turnip_Green</li>
+				<li>SRV_Cabbage</li>
+				<li>SRV_PickledGeneric</li>	
+			    <li>SRV_PickledTurnip</li>
+				<li>SRV_PickledCabbage</li>
+				<li>SRV_MushroomBundle</li>
+				<li>SRV_PricklyPear</li>
+			    <li>SRV_Cheese</li>
+				<li>SRV_SmokedCheese</li>
+                <li>SRV_MealCabbageSalad</li>
+                <li>SRV_MealTurnipSalad</li>
+
+						
+				<!--RimCuisine 2 Core-->
+			    <li>RC2_Flour</li>
+			    <li>RC2_Sugar</li>
+			    <li>RC2_Tofu</li>
+				<li>RC2_Syrup</li>
+				<li>RC2_Honey</li>
+				<li>RC2_AgaveNectar</li>
+				<li>RC2_PickledVegetables</li>
+				<li>RC2_PreparedFruit</li>
+				<li>RC2_PickleBrine</li>
+				<li>RC2_RawOats</li>
+				<li>RC2_RawQuinoa</li>
+				<li>RC2_RawBarley</li>
+				<li>RC2_RawSorghum</li>
+				<li>RC2_RawOnion</li>
+				<li>RC2_RawTomato</li>
+				<li>RC2_RawSoybean</li>
+				<li>RC2_RawChickpeas</li>
+				<li>RC2_RawTruffles</li>
+				<li>RC2_RawCabbages</li>
+				<li>RC2_RawCarrots</li>
+				<li>RC2_RawBeets</li>
+				<li>RC2_RawYams</li>
+				<li>RC2_RawPeppers</li>
+				<li>RC2_RawSnapPeas</li>
+				<li>RC2_RawCucumbers</li>
+				<li>RC2_RawSugarBeets</li>
+				<li>RC2_RawAsparagus</li>				
+				<li>RC2_RawEggplants</li>
+				<li>RC2_RawBanana</li>				
+				<li>RC2_RawApples</li>
+				<li>RC2_RawOrange</li>				
+				<li>RC2_RawFigs</li>
+				<li>RC2_RawPomegranates</li>
+				<li>RC2_RawCactusFruit</li>
+				<li>RC2_RawCoconut</li>								
+				<li>RC2_RawJuniperBerries</li>
+				<li>RC2_RawGrapes</li>				
+				<li>RC2_RawMelons</li>
+				<li>RC2_RawPumpkins</li>	
+				<li>RC2_RawPineapples</li>
+				<li>RC2_RawBreadfruit</li>
+				<li>RC2_RawDurians</li>
+				<li>RC2_RawPlums</li>											
+				<li>RC2_RawPeaches</li>
+				<li>RC2_RawPecans</li>				
+				<li>RC2_RawCherries</li>
+				<li>RC2_RawWheat</li>					
+				<li>RC2_RawSugarcane</li>
+				<li>RC2_RawCoffeeBeans</li>				
+				<li>RC2_RawTeaLeaves</li>
+				<li>RC2_RawCocoaBeans</li>
+				<li>RC2_MealJuice</li>
+			
+
+
+	
+            </whiteFoodList>
+			
+			
+
+        </raceRestriction>
+
+
+
+	</alienRace>
+
+
+	
+
+
+</AlienRace.ThingDef_AlienRace>
+</Defs>

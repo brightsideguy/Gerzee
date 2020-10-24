@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+
+<Defs>
+
+  <BodyPartDef>
+    <defName>EyeStalkLF</defName>
+    <label>left front eye stalk</label>
+    <hitPoints>12</hitPoints>
+    <permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
+    <delicate>true</delicate>
+    <skinCovered>false</skinCovered>
+    <socketed>false</socketed>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>SightSource</li>
+    </tags>
+    <hitChanceFactors>
+      <li>
+        <key>Blunt</key>
+        <value>0.3</value>
+      </li>
+    </hitChanceFactors>
+  </BodyPartDef>
+
+
+  <BodyPartDef>
+    <defName>EyeStalkRF</defName>
+    <label>right front eye stalk</label>
+    <hitPoints>12</hitPoints>
+    <permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
+    <delicate>true</delicate>
+    <skinCovered>false</skinCovered>
+    <socketed>false</socketed>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>SightSource</li>
+    </tags>
+    <hitChanceFactors>
+      <li>
+        <key>Blunt</key>
+        <value>0.3</value>
+      </li>
+    </hitChanceFactors>
+  </BodyPartDef>
+
+
+  <BodyPartDef>
+    <defName>EyeStalkLR</defName>
+    <label>left rear eye stalk</label>
+    <hitPoints>12</hitPoints>
+    <permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
+    <delicate>true</delicate>
+    <skinCovered>false</skinCovered>
+    <socketed>false</socketed>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>SightSource</li>
+    </tags>
+    <hitChanceFactors>
+      <li>
+        <key>Blunt</key>
+        <value>0.3</value>
+      </li>
+    </hitChanceFactors>
+  </BodyPartDef>
+
+
+
+  <BodyPartDef>
+    <defName>EyeStalkRR</defName>
+    <label>right rear eye stalk</label>
+    <hitPoints>12</hitPoints>
+    <permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
+    <delicate>true</delicate>
+    <skinCovered>false</skinCovered>
+    <socketed>false</socketed>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>SightSource</li>
+    </tags>
+    <hitChanceFactors>
+      <li>
+        <key>Blunt</key>
+        <value>0.3</value>
+      </li>
+    </hitChanceFactors>
+  </BodyPartDef>
+
+
+
+
+
+</Defs>
+
+
+
+
+
+
+
+
