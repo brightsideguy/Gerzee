@@ -21,13 +21,15 @@
 	</li>
     </backstoryFiltersOverride>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
+	<apparelMoney>
+      <min>0</min><!--0 -->
+      <max>330</max>
+    </apparelMoney>
     <apparelTags>
       <li>Neolithic</li>
+	  <li>IndustrialAdvanced</li>
     </apparelTags>
-    <apparelMoney>
-      <min>200</min>
-      <max>200</max>
-    </apparelMoney>
+	<gearHealthRange>0.2~0.4</gearHealthRange>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <techHediffsMoney>
       <min>50</min>
@@ -38,8 +40,9 @@
     </techHediffsTags>
     <techHediffsChance>0.02</techHediffsChance>
 	
-	<minGenerationAge>1</minGenerationAge>
-    <maxGenerationAge>17</maxGenerationAge>
+	<minGenerationAge>0</minGenerationAge>
+    <maxGenerationAge>22</maxGenerationAge>
+	
 	
 	</PawnKindDef>
 
@@ -74,28 +77,94 @@
       <li>Poor</li>
     </techHediffsTags>
     <techHediffsChance>0.02</techHediffsChance>
-    <gearHealthRange>
-      <min>0.2</min>
-      <max>0.6</max>
-    </gearHealthRange>
     <itemQuality>Poor</itemQuality>
-<!--    <weaponMoney>
-      <min>200</min>
-      <max>200</max>
-    </weaponMoney> -->
-<!--    <weaponTags>
-      <li>MeleeWeapon_Spear</li>
-    </weaponTags> -->
-<!--    <apparelRequired>
-      <li>Apparel_Duster</li>
-    </apparelRequired> -->
+	<apparelMoney>
+      <min>188</min><!--0 -->
+      <max>330</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Neolithic</li>
+	  <li>IndustrialAdvanced</li>
+    </apparelTags>
+
+	<apparelRequired>
+      <li>Apparel_WarVeil</li>
+    </apparelRequired>
 	
+	<gearHealthRange>0.5~0.7</gearHealthRange>
+	<weaponMoney>115~300</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeDecent</li>
+      <li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+
 	<minGenerationAge>3</minGenerationAge>
     <maxGenerationAge>17</maxGenerationAge>
 	
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
 	
 	</PawnKindDef>
+
+
+
+<!-- add my ranged Volunteer Guard -->
+
+   <PawnKindDef>
+    <defName>GerzeeDefender</defName>
+    <label>Gerzee Defender</label>	
+    <race>GerzeeRace</race>
+	<combatPower>45</combatPower>
+    <isFighter>true</isFighter>
+    <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <defaultFactionType>GerzeeSlaveSurvivors</defaultFactionType>
+    <backstoryFiltersOverride>
+	<li>
+		<categories>
+	  <li>ToughPeacefulTribe</li>	
+		</categories>	
+	</li>
+    </backstoryFiltersOverride>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>50</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.02</techHediffsChance>
+    <itemQuality>Poor</itemQuality>
+	<apparelMoney>
+      <min>188</min><!--0 -->
+      <max>330</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Neolithic</li>
+	  <li>IndustrialAdvanced</li>
+    </apparelTags>
+	<gearHealthRange>0.5~0.7</gearHealthRange>
 	
+	<weaponMoney>115~200</weaponMoney>
+    <weaponTags>
+		<li>NeolithicRangedChief</li>
+    </weaponTags>
+
+	<minGenerationAge>3</minGenerationAge>
+    <maxGenerationAge>17</maxGenerationAge>
+	
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+	
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+	
+	</PawnKindDef>	
 
 
 
@@ -105,7 +174,7 @@
     <defName>GerzeeWarrior</defName>
     <label>Gerzee Warrior</label>	
     <race>GerzeeRace</race>
-	<combatPower>55</combatPower>
+	<combatPower>65</combatPower>
     <isFighter>true</isFighter>
     <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
@@ -118,13 +187,16 @@
 	</li>
     </backstoryFiltersOverride>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
-        <apparelMoney>
-      <min>0</min>
-      <max>330</max>
+		<apparelMoney>
+      <min>250</min><!--0 -->
+      <max>600</max><!--330 -->
     </apparelMoney>
     <apparelTags>
       <li>Neolithic</li>
+	  <li>IndustrialAdvanced</li>
+	  <li>IndustrialMilitaryBasic</li>
     </apparelTags>
+	<gearHealthRange>0.5~0.7</gearHealthRange>
 	<apparelRequired>
       <li>Apparel_WarMask</li>
     </apparelRequired>
@@ -138,36 +210,85 @@
     </techHediffsTags>
     <techHediffsChance>0.02</techHediffsChance>
 	<inventoryOptions>
- <!--     <subOptionsChooseOne>
-        <li>          
-          <thingDef>MedicineIndustrial</thingDef>
-          <countRange>5</countRange>
-        </li>		
-      </subOptionsChooseOne> -->
     </inventoryOptions>
-    <gearHealthRange>
-      <min>0.2</min>
-      <max>0.8</max>
-    </gearHealthRange>
     <itemQuality>Normal</itemQuality>
     <weaponMoney>
       <min>188</min>
-      <max>200</max>
+      <max>400</max>
     </weaponMoney>
     <weaponTags>
       <li>NeolithicMeleeAdvanced</li>
+      <li>MedievalMeleeAdvanced</li>
+      <li>NeolithicRangedChief</li>
     </weaponTags>
-<!--    <apparelRequired>
-      <li>Apparel_Duster</li>
-    </apparelRequired> -->
-	
 	<minGenerationAge>4</minGenerationAge>
     <maxGenerationAge>17</maxGenerationAge>
-	
-	
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
 	</PawnKindDef>
-	
-	
+
+
+<!-- top tier kind fighters -->
+
+   <PawnKindDef>
+    <defName>GerzeeSavior</defName>
+    <label>Gerzee Savior</label>	
+    <race>GerzeeRace</race>
+	<combatPower>150</combatPower>
+    <isFighter>true</isFighter>
+    <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <defaultFactionType>GerzeeSlaveSurvivors</defaultFactionType>
+    <backstoryFiltersOverride>
+		<li>
+		<categories>
+  	  <li>WarriorPeacefulTribe</li>
+		</categories>	
+	</li>
+    </backstoryFiltersOverride>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelMoney>
+      <min>400</min><!--0 -->
+      <max>1430</max><!--330 -->
+    </apparelMoney>
+    <apparelTags>
+      <li>Neolithic</li>
+	  <li>IndustrialAdvanced</li>
+	  <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+	  </apparelTags>	
+	<gearHealthRange>0.7~0.9</gearHealthRange>
+	<apparelRequired>
+      <li>Apparel_WarMask</li>
+	  <li>Apparel_ShieldBelt</li>
+    </apparelRequired>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>50</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.02</techHediffsChance>
+	<inventoryOptions>
+    </inventoryOptions>
+    <itemQuality>Normal</itemQuality>
+    <weaponMoney>
+      <min>188</min>
+      <max>340</max>
+    </weaponMoney>
+    <weaponTags>
+       <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+	<minGenerationAge>4</minGenerationAge>
+    <maxGenerationAge>17</maxGenerationAge>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+	</PawnKindDef>
+
 	
 	
 	
@@ -192,13 +313,17 @@
 	</li>
     </backstoryFiltersOverride>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
-        <apparelMoney>
-      <min>0</min>
+	<apparelMoney>
+      <min>100</min><!--0 -->
       <max>330</max>
     </apparelMoney>
     <apparelTags>
       <li>Neolithic</li>
+	  <li>IndustrialAdvanced</li>
+  	  <li>IndustrialMilitaryBasic</li>
     </apparelTags>
+	<gearHealthRange>0.8~0.1</gearHealthRange>
+	
 	<apparelRequired>
       <li>Apparel_WarMask</li>
     </apparelRequired>
@@ -212,17 +337,7 @@
     </techHediffsTags>
     <techHediffsChance>0.02</techHediffsChance>
 	<inventoryOptions>
- <!--     <subOptionsChooseOne>
-        <li>          
-          <thingDef>MedicineIndustrial</thingDef>
-          <countRange>5</countRange>
-        </li>		
-      </subOptionsChooseOne> -->
     </inventoryOptions>
-    <gearHealthRange>
-      <min>0.2</min>
-      <max>0.8</max>
-    </gearHealthRange>
     <itemQuality>Normal</itemQuality>
     <weaponMoney>
       <min>188</min>
@@ -231,32 +346,31 @@
     <weaponTags>
       <li>NeolithicRangedAdvanced</li>
     </weaponTags>
-<!--    <apparelRequired>
-      <li>Apparel_Duster</li>
-    </apparelRequired> -->
-	
 	<minGenerationAge>4</minGenerationAge>
     <maxGenerationAge>17</maxGenerationAge>
+			<baseRecruitDifficulty>0.95</baseRecruitDifficulty>		
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
 	
-			<baseRecruitDifficulty>0.95</baseRecruitDifficulty>
 	</PawnKindDef>
 	
 
 
 
 
-
+<!-- ///////////////////////////////////////////////////////// -->
 
 <!-- vengence tribe -->
 
 	
-<!-- add my beserked tribal aim -->
+<!-- add my lower tear fighter tribal aim -->
 
    <PawnKindDef>
-    <defName>GerzeeBeserker</defName>
-    <label>Vengence Beserker</label>	
+    <defName>GerzeeBrawler</defName>
+    <label>Vengeful Brawler</label>	
     <race>GerzeeRace</race>
-	<combatPower>60</combatPower>
+	<combatPower>55</combatPower>
     <isFighter>true</isFighter>
     <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
@@ -271,18 +385,16 @@
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
 
     <apparelMoney>
-      <min>0</min>
+      <min>100</min><!--0 -->
       <max>330</max>
     </apparelMoney>
     <apparelTags>
       <li>Neolithic</li>
+	  <li>IndustrialAdvanced</li>
     </apparelTags>
-<!--     <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance> -->
-
 	<apparelRequired>
-      <li>Apparel_WarMask</li>
+      <li>Apparel_WarVeil</li>
     </apparelRequired>
-
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <techHediffsMoney>
       <min>50</min>
@@ -294,40 +406,209 @@
     <techHediffsChance>0.02</techHediffsChance>
 	<inventoryOptions>
     </inventoryOptions>
-    <gearHealthRange>
-      <min>0.2</min>
-      <max>0.6</max>
-    </gearHealthRange>
+	<gearHealthRange>0.2~0.6</gearHealthRange>
     <itemQuality>Normal</itemQuality>
-    <weaponMoney>
-      <min>188</min>
-      <max>200</max>
-    </weaponMoney>
-    <weaponTags>
-      <li>NeolithicMeleeAdvanced</li>
-    </weaponTags>
-<!--    <apparelRequired>
-      <li>Apparel_Duster</li>
-    </apparelRequired> -->
-	
 	<minGenerationAge>4</minGenerationAge>
     <maxGenerationAge>17</maxGenerationAge>
-	
 	<baseRecruitDifficulty>0.95</baseRecruitDifficulty> 
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
 	
 	</PawnKindDef>
 	
 	
 	
+<!-- add my beserked tribal aim -->
+
+   <PawnKindDef>
+    <defName>GerzeeHurler</defName>
+    <label>Vengence Hurler</label>	
+    <race>GerzeeRace</race>
+	<combatPower>55</combatPower>
+    <isFighter>true</isFighter>
+    <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <defaultFactionType>GerzeeWrathful</defaultFactionType>
+    <backstoryFiltersOverride>
+		<li>
+		<categories>
+	  <li>VengBeserker</li>
+		</categories>	
+	</li>
+    </backstoryFiltersOverride>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+
+    <apparelMoney>
+      <min>156</min><!--0 -->
+      <max>330</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Neolithic</li>
+	  <li>IndustrialAdvanced</li>
+    </apparelTags>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>50</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.02</techHediffsChance>
+	<inventoryOptions>
+    </inventoryOptions>
+	<gearHealthRange>0.2~0.6</gearHealthRange>
+    <itemQuality>Normal</itemQuality>
+    <weaponMoney>
+      <min>188</min><!--188 -->
+      <max>400</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicRangedChief</li>
+    </weaponTags>
+	<minGenerationAge>4</minGenerationAge>
+    <maxGenerationAge>17</maxGenerationAge>
+	<baseRecruitDifficulty>0.95</baseRecruitDifficulty> 
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+	
+	</PawnKindDef>
+
+
+<!-- mid tier soldier -->
+   <PawnKindDef>
+    <defName>GerzeeKiller</defName>
+    <label>Vengeful Killer</label>	
+    <race>GerzeeRace</race>
+	<combatPower>65</combatPower>
+    <isFighter>true</isFighter>
+    <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <defaultFactionType>GerzeeWrathful</defaultFactionType>
+    <backstoryFiltersOverride>
+		<li>
+		<categories>
+	  <li>VengBeserker</li>
+		</categories>	
+	</li>
+    </backstoryFiltersOverride>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <apparelMoney>
+      <min>250</min><!--0 -->
+      <max>600</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Neolithic</li>
+	  <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+    </apparelTags>
+	<apparelRequired>
+      <li>Apparel_WarMask</li>
+    </apparelRequired>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>50</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.02</techHediffsChance>
+	<inventoryOptions>
+    </inventoryOptions>
+	<gearHealthRange>0.2~0.6</gearHealthRange>
+    <itemQuality>Normal</itemQuality>
+    <weaponMoney>
+      <min>188</min><!--188 -->
+      <max>200</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeDecent</li>
+      <li>NeolithicMeleeAdvanced</li>
+      <li>NeolithicRangedChief</li>
+    </weaponTags>
+	<minGenerationAge>4</minGenerationAge>
+    <maxGenerationAge>17</maxGenerationAge>
+	<baseRecruitDifficulty>0.95</baseRecruitDifficulty> 
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+
+	</PawnKindDef>
+	
+	
+	
+	
+<!-- add my beserked tribal aim -->
+
+
+   <PawnKindDef>
+    <defName>GerzeeBeserker</defName>
+    <label>Vengence Beserker</label>	
+    <race>GerzeeRace</race>
+	<combatPower>85</combatPower>
+    <isFighter>true</isFighter>
+    <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <defaultFactionType>GerzeeWrathful</defaultFactionType>
+    <backstoryFiltersOverride>
+		<li>
+		<categories>
+	  <li>VengBeserker</li>
+		</categories>	
+	</li>
+    </backstoryFiltersOverride>
+    <chemicalAddictionChance>0.35</chemicalAddictionChance>
+    <combatEnhancingDrugsChance>0.65</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+    <apparelMoney>
+      <min>250</min><!--0 -->
+      <max>600</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Neolithic</li>
+	  <li>IndustrialAdvanced</li>
+    </apparelTags>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsMoney>
+      <min>100</min>
+      <max>300</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.3</techHediffsChance>
+	<inventoryOptions>
+    </inventoryOptions>
+	<gearHealthRange>0.2~0.6</gearHealthRange>
+    <itemQuality>Normal</itemQuality>
+<!--    <weaponMoney>
+      <min>188</min>
+      <max>200</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeDecent</li>
+      <li>NeolithicMeleeAdvanced</li>
+    </weaponTags>-->
+	<minGenerationAge>4</minGenerationAge>
+    <maxGenerationAge>17</maxGenerationAge>
+	<baseRecruitDifficulty>0.95</baseRecruitDifficulty> 
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+	</PawnKindDef>
 	
 	
 <!-- add my beserked tribe special forces -->
 
    <PawnKindDef>
     <defName>GerzeeAltered</defName>
-    <label>Altereded Gerzee</label>	
+    <label>Altered Gerzee</label>	
     <race>GerzeeRace</race>
-	<combatPower>160</combatPower>
+	<combatPower>170</combatPower>
     <isFighter>true</isFighter>
     <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
@@ -340,13 +621,75 @@
 	</li>
     </backstoryFiltersOverride>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
- <!-- <apparelTags>
-      <li>Neolithic</li>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>50</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.2</techHediffsChance>
+	<inventoryOptions>
+    </inventoryOptions>
+		<gearHealthRange>0.7~0.1</gearHealthRange>
+    <itemQuality>Normal</itemQuality>
+	<weaponMoney>1200~2000</weaponMoney>
+    <weaponTags>
+      <li>GunHeavy</li>
+ <!--    <li>MedievalMeleeAdvanced</li>
+      <li>NeolithicMeleeDecent</li>-->
+    </weaponTags>
+	
+	   <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+  <!--    <li>GerzeeIndustrialMilitaryBasic</li>PATCH IN-->
+      <li>IndustrialMilitaryAdvanced</li>
+	        <li>SpacerMilitary</li>
+<!--			        <li>BeltDefense</li>-->
     </apparelTags>
-<apparelMoney>
-      <min>200</min>
-      <max>2000</max>
-    </apparelMoney> -->
+    <apparelMoney>2500~3500</apparelMoney>
+	
+	<apparelRequired>
+      <li>Apparel_WarMask</li>
+    </apparelRequired>
+	
+	
+	<minGenerationAge>4</minGenerationAge>
+    <maxGenerationAge>17</maxGenerationAge>
+		<baseRecruitDifficulty>0.99</baseRecruitDifficulty> 
+		
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+	
+    <biocodeWeaponChance>0.8</biocodeWeaponChance>
+	
+	</PawnKindDef>
+	
+	
+	
+	
+<!-- add my beserked tribe melee special forces -->
+
+   <PawnKindDef>
+    <defName>GerzeeAlteredMauler</defName>
+    <label>Altered G Mauler</label>	
+    <race>GerzeeRace</race>
+	<combatPower>170</combatPower>
+    <isFighter>true</isFighter>
+    <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <defaultFactionType>GerzeeWrathful</defaultFactionType>
+    <backstoryFiltersOverride>
+	  	<li>
+		<categories>
+	  <li>VengAltered</li>	
+		</categories>	
+	</li>
+    </backstoryFiltersOverride>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <techHediffsMoney>
       <min>50</min>
@@ -358,28 +701,44 @@
     <techHediffsChance>0.02</techHediffsChance>
 	<inventoryOptions>
     </inventoryOptions>
-    <gearHealthRange>
-      <min>0.2</min>
-      <max>0.6</max>
-    </gearHealthRange>
+		<gearHealthRange>0.7~0.1</gearHealthRange>
     <itemQuality>Normal</itemQuality>
-    <weaponMoney>
-      <min>4000</min>
-      <max>4000</max>
-    </weaponMoney>
+	<weaponMoney>1200~4000</weaponMoney>
     <weaponTags>
- 	  <li>Gun</li>
+     <li>MedievalMeleeAdvanced</li>
     </weaponTags>
-    <apparelRequired>
-      <li>Apparel_FlakVest</li>
+	   <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+  <!--    <li>GerzeeIndustrialMilitaryBasic</li>PATCH IN-->
+      <li>IndustrialMilitaryAdvanced</li>
+	        <li>SpacerMilitary</li>
+<!--			        <li>BeltDefense</li>-->
+    </apparelTags>
+    <apparelMoney>2500~3500</apparelMoney>
+	
+	<apparelRequired>
+      <li>Apparel_ShieldBelt</li>
       <li>Apparel_WarMask</li>
-      <li>Apparel_Duster</li>	  
-<!--     <li>Apparel_ShieldBelt</li>-->
     </apparelRequired>
+	
 	<minGenerationAge>4</minGenerationAge>
     <maxGenerationAge>17</maxGenerationAge>
 		<baseRecruitDifficulty>0.99</baseRecruitDifficulty> 
+		
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <chemicalAddictionChance>0.1</chemicalAddictionChance>
+    <combatEnhancingDrugsChance>0.55</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>	
 	</PawnKindDef>
+	
+	
+	
+	
+	
 	
 	
 	
@@ -407,13 +766,6 @@
 	</li>
     </backstoryFiltersOverride>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
- <!-- <apparelTags>
-      <li>Neolithic</li>
-    </apparelTags>
-<apparelMoney>
-      <min>200</min>
-      <max>2000</max>
-    </apparelMoney> -->
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <techHediffsMoney>
       <min>50</min>
@@ -425,17 +777,14 @@
     <techHediffsChance>0.02</techHediffsChance>
 	<inventoryOptions>
     </inventoryOptions>
-    <gearHealthRange>
-      <min>0.2</min>
-      <max>0.6</max>
-    </gearHealthRange>
+	<gearHealthRange>0.7~0.1</gearHealthRange>
     <itemQuality>Normal</itemQuality>
     <weaponMoney>
       <min>4000</min>
       <max>4000</max>
     </weaponMoney>
     <weaponTags>
- 	  <li>Gun</li>
+      <li>GunHeavy</li>
     </weaponTags>
     <apparelRequired>
       <li>Apparel_FlakVest</li>
@@ -446,6 +795,11 @@
 	<minGenerationAge>4</minGenerationAge>
     <maxGenerationAge>17</maxGenerationAge>
 		<baseRecruitDifficulty>0.99</baseRecruitDifficulty> 
+		
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+	
 	</PawnKindDef>
 	
 	
@@ -476,13 +830,15 @@
 	</li>
     </backstoryFiltersOverride>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
+	<apparelMoney>
+      <min>100</min><!--0 -->
+      <max>330</max>
+    </apparelMoney>
     <apparelTags>
       <li>Neolithic</li>
+	  <li>IndustrialAdvanced</li>
     </apparelTags>
-    <apparelMoney>
-      <min>200</min>
-      <max>200</max>
-    </apparelMoney>
+	<gearHealthRange>0.2~0.5</gearHealthRange>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <techHediffsMoney>
       <min>50</min>
@@ -511,7 +867,6 @@
     <isFighter>false</isFighter>
     <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
-<!--    <defaultFactionType>GerzeeSlaveSurvivors</defaultFactionType> -->
     <backstoryFiltersOverride>
 	  	<li>
 		<categories>
@@ -523,13 +878,15 @@
 	</li>
     </backstoryFiltersOverride>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
+	<apparelMoney>
+      <min>100</min><!--0 -->
+      <max>330</max>
+    </apparelMoney>
     <apparelTags>
       <li>Neolithic</li>
+	  <li>IndustrialAdvanced</li>
     </apparelTags>
-    <apparelMoney>
-      <min>200</min>
-      <max>200</max>
-    </apparelMoney>
+	<gearHealthRange>0.9~1</gearHealthRange>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <techHediffsMoney>
       <min>50</min>
@@ -556,8 +913,7 @@
     <defName>GerzeeTrader</defName>
     <label>Trader</label>	
     <race>GerzeeRace</race>
-    <!--fix trader numbers by 35 to 100-->
-	<combatPower>100</combatPower>
+	<combatPower>100</combatPower><!--fix trader numbers by 35 to 100-->
     <isFighter>false</isFighter>
     <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>

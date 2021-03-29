@@ -17,7 +17,8 @@
 			<li>
 				<kindDefs>
 	  <li>GerzeeTribal</li>
-	  <li>GerzeeToughExSlave</li>
+	  <li>GerzeeGuard</li>
+	  <li>GerzeeWarrior</li>	  
 	  <li>GerzeeBeserker</li>
 	  <li>GerzeeSlave</li>
 	  <li>GerzeeSpaceRefugee</li>
@@ -31,7 +32,8 @@
 					<li>
 						<kindDefs>
 	  <li>GerzeeTribal</li>
-	  <li>GerzeeToughExSlave</li>
+	  <li>GerzeeGuard</li>
+	  <li>GerzeeWarrior</li>
 	  <li>GerzeeSlave</li>
 						</kindDefs>
 						<chance>15.0</chance>
