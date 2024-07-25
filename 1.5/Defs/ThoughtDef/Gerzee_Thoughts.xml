@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>GerzeeNeedFood</defName>
+    <workerClass>ThoughtWorker_NeedFood</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>getting hungry</label>
+        <description>I'll need a snack at some point.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+      <li>
+        <label>hungry</label>
+        <description>I'll need some food soon.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+      <li>
+        <label>empty stomach</label>
+        <description>I need food now.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+      <li>
+        <label>malnourished</label>
+        <description>I really need some food now.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>starving</label>
+        <description>I can barely think about anything but food. My skin is stretching over my bones. Am I going to die?</description>
+        <baseMoodEffect>-32</baseMoodEffect>
+      </li>
+      <li>
+        <label>advanced starvation</label>
+        <description>I can barely move or think about anything but food. My stomach hurts like never before. I feel like I'm going to pass out.</description>
+        <baseMoodEffect>-38</baseMoodEffect>
+      </li>
+      <li>
+        <label>extreme starvation</label>
+        <description>Food... food... anything... please...</description>
+        <baseMoodEffect>-44</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+  <ThoughtDef>
+    <defName>GerzeeNeedRoomSize</defName>
+    <workerClass>ThoughtWorker_NeedRoomSize</workerClass>
+    <stages>
+      <li>
+        <label>confined interior</label>
+        <description>This space is so tiny. I feel very hidden and safe.</description>
+        <baseMoodEffect>+2</baseMoodEffect>
+      </li>
+      <li>
+        <label>cramped interior</label>
+        <description>This room is small. I feel safe being able to see everything.</description>
+        <baseMoodEffect>+1</baseMoodEffect>
+      </li>
+      <li>
+        <label>spacious interior</label>
+        <description>This room is so expansive. That's okay, I guess.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+  <ThoughtDef>
+    <defName>SafeSleep</defName>
+    <icon>Things/Mote/ThoughtSymbol/SleepZ</icon>
+    <showBubble>true</showBubble>
+    <durationDays>1</durationDays>
+    <stackLimit>2</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>Safe sleep</label>
+        <description>It was nice knowing that members of my colony were awake and moving around nearby while I slept. I felt safe.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+  <ThoughtDef>
+    <defName>GerzeeSleptInBarracks</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>awful communal barracks</label>
+        <description>I had to sleep in an awful space. But getting to sleep around other members of my herd made it feel a lot better.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+      <li>
+        <label>dull communal barracks</label>
+        <description>I had to sleep in a dull space. But I'm happy to have slept around other members of my herd.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+      <li>
+        <label>mediocre communal barracks</label>
+        <description>I had to sleep in a mediocre space. But I'm happy to have slept around other members of my herd.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>decent communal barracks</label>
+        <description>I slept in a decent space and I'm happy I got to sleep around other members of my herd.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>slightly impressive communal barracks</label>
+        <description>I got to sleep in a pretty nice space and I'm happy I got to sleep around other members of my herd.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>impressive communal barracks</label>
+        <description>I got to sleep in an impressive space. I even got to sleep around other members of my herd.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>very impressive communal barracks</label>
+        <description>I slept in a very impressive space and I love sharing it with members of my herd.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+      <li>
+        <label>extremely impressive communal barracks</label>
+        <description>I slept in an extremely impressive space and I love sharing it with members of my herd.</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+      <li>
+        <label>unbelievably impressive communal barracks</label>
+        <description>The space I slept in was so impressive and I love sharing it with members of my herd.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+      <li>
+        <label>wondrously impressive communal barracks</label>
+        <description>I slept in a space that was simply wondrous. Getting to share it with members of my herd made it even better.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+</Defs>

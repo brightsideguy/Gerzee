@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Blood_Gerzee</defName>
+    <label>blood</label>
+    <statBases>
+      <Beauty>-35</Beauty>
+      <Cleanliness>-20</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(255, 240, 255, 70)</color>
+    </graphicData>
+    <filth>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>50</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+    </filth>
+  </ThingDef>
+
+
+  
+</Defs>

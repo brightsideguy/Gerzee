@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef>
+<!--   <goodwillDailyGain>0.20</goodwillDailyGain>
+   <goodwillDailyFall>0.40</goodwillDailyFall>-->
+		<defName>GerzeeSlaveSurvivors</defName>
+		<label>Gerzee Slave Survivors</label>
+    <description>A colony of escaped Gerzee slaves, banded together and trying to survive.</description>
+    <pawnsPlural>Gerzee</pawnsPlural>
+     <settlementGenerationWeight>0.75</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<!--<hairTags>
+	    <li>Tribal</li>
+	</hairTags>-->
+	<fixedName>The Free Gerzee</fixedName>
+    <canMakeRandomly>true</canMakeRandomly>  
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Herd Guide</leaderTitle>
+<!--    <startingGoodwill>
+      <min>0</min>
+      <max>5</max>
+    </startingGoodwill>
+    <naturalColonyGoodwill>
+      <min>0</min>
+      <max>1</max>
+    </naturalColonyGoodwill>-->
+<!--	<pawnNameMaker>NamerPersonTribal</pawnNameMaker>  -->
+	<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+
+    <allowedCultures><li>Corunan</li></allowedCultures>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>	  
+    </disallowedMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Classic</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Classic</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Acceptable</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Preferred</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredStrong</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredRavenous</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinOrChestDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinOrChestDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestOrHairDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestOrHairDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestHairOrFaceDisapproved</li>
+<!--	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>-->
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Ranching_Central</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Research_Normal</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Research_Fast</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Research_VeryFast</li>
+    </disallowedPrecepts>
+    <structureMemeWeights>
+      <Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">4</Structure_Animist>
+      <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+      <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+      <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
+      <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+    </structureMemeWeights>
+
+<!-- not sure what these mean yet 
+	    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+
+-->
+
+	<techLevel>Neolithic</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+
+	<!--<melaninRange>0.8~1</melaninRange>-->
+
+    <visitorTraderKinds>
+      <li>Trader_Gerzee</li>
+    </visitorTraderKinds>
+
+
+    <caravanTraderKinds>
+      <li>Trader_Gerzee</li>
+    </caravanTraderKinds>
+
+    <baseTraderKinds>
+      <li>Base_Neolithic_Standard</li>
+    </baseTraderKinds>
+
+
+
+
+    <allowedArrivalTemperatureRange>
+      <min>-70</min>
+      <max>20</max>
+    </allowedArrivalTemperatureRange>
+	
+	    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 1)</li> <!--Constant 1 at all points levels-->
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <raidLootMaker>TribeRaidLootMaker</raidLootMaker>
+	
+	<maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(200, 100)</li>
+        <li>(500, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+		
+    <pawnGroupMakers>
+<!--full mix -->
+	  <li>       
+        <kindDef>Combat</kindDef>
+		<commonality>80</commonality>
+        <options>
+		  <GerzeeGuard>20</GerzeeGuard>
+		  <GerzeeDefender>5</GerzeeDefender>
+          <GerzeeWarrior>10</GerzeeWarrior>
+		  <GerzeeSavior>2</GerzeeSavior>
+		  <FreeGerzeeHerdGuide>1</FreeGerzeeHerdGuide>
+        </options>
+      </li>
+	  
+<!-- melee charge -->
+	  <li>       
+        <kindDef>Combat</kindDef>
+		<commonality>100</commonality>
+        <options>
+		  <GerzeeGuard>15</GerzeeGuard>
+          <GerzeeWarrior>15</GerzeeWarrior>
+		  <GerzeeSavior>5</GerzeeSavior>
+		  <FreeGerzeeHerdGuide>1</FreeGerzeeHerdGuide>
+        </options>
+      </li>
+	  	  
+	  
+<!-- elite melee charge -->	  
+	  
+	  <li>       
+        <kindDef>Combat</kindDef>
+		<commonality>30</commonality>
+        <options>
+		  <GerzeeGuard>5</GerzeeGuard>
+          <GerzeeWarrior>15</GerzeeWarrior>
+		  <GerzeeSavior>5</GerzeeSavior>
+		  <FreeGerzeeHerdGuide>1</FreeGerzeeHerdGuide>
+        </options>
+      </li>
+	  
+	  
+
+<!-- ranged assault -->
+	  <li>       
+        <kindDef>Combat</kindDef>
+		<commonality>20</commonality>
+        <options>
+		  <GerzeeGuard>5</GerzeeGuard>
+		  <GerzeeDefender>20</GerzeeDefender>
+          <GerzeeWarrior>5</GerzeeWarrior>
+		  <GerzeeSavior>4</GerzeeSavior>
+		  <FreeGerzeeHerdGuide>1</FreeGerzeeHerdGuide>
+        </options>
+      </li>
+	  
+	  
+
+
+	  
+
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <GerzeeTribal>1</GerzeeTribal>
+		  <FreeGerzeeHerdGuide>1</FreeGerzeeHerdGuide>
+        </options>
+      </li>
+
+
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <GerzeeTrader>1</GerzeeTrader>
+        </traders>
+        <carriers>
+          <Muffalo>2</Muffalo>
+        </carriers>
+		</li>
+
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <GerzeeTribal>8</GerzeeTribal>
+		  <GerzeeGuard>5</GerzeeGuard>	  
+		  <GerzeeDefender>5</GerzeeDefender>
+          <GerzeeWarrior>5</GerzeeWarrior>
+		  <GerzeeSavior>4</GerzeeSavior>
+          <FreeGerzeeHerdGuide>1</FreeGerzeeHerdGuide>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/GerzeeBaseIcon</settlementTexturePath>
+	<factionIconPath>World/GerzeeBaseIcon</factionIconPath>
+
+	    <raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>83</configurationListOrderPriority>
+
+  </FactionDef>
+
+
+
+
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Beserked Gerzee --> 
+
+  <FactionDef>
+<!--   <goodwillDailyGain>0.20</goodwillDailyGain>
+   <goodwillDailyFall>0.40</goodwillDailyFall>-->
+		<defName>GerzeeWrathful</defName>
+		<label>Gerzee Wrathful</label>
+    <description>Gerzee that mentally snapped from years of mistreatment as slaves, and are now very willing to hurt anything that isn't a part of their new tribe.</description>
+    <pawnsPlural>Gerzee</pawnsPlural>
+     <settlementGenerationWeight>0.75</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<!--<hairTags>
+	    <li>Tribal</li>
+	</hairTags>-->
+	<fixedName>The Gerzee Wrathful</fixedName>
+    <canMakeRandomly>true</canMakeRandomly>  
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Chieftan</leaderTitle>
+	
+<naturalEnemy>true</naturalEnemy>
+	
+	<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+
+
+    <allowedCultures><li>Corunan</li></allowedCultures>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+    </disallowedMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Classic</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Classic</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Acceptable</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Preferred</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredStrong</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredRavenous</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinOrChestDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinOrChestDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestOrHairDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestOrHairDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestHairOrFaceDisapproved</li>
+<!--	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>-->
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Ranching_Central</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Research_Normal</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Research_Fast</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Research_VeryFast</li>
+    </disallowedPrecepts>
+    <structureMemeWeights>
+      <Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">4</Structure_Animist>
+      <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+      <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+      <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
+      <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+    </structureMemeWeights>
+
+<!-- not sure what these mean yet 
+	    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+
+-->
+
+
+	<techLevel>Industrial</techLevel><!--Neolithic-->
+
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+
+<!--	<melaninRange>0.8</melaninRange>-->
+
+    <allowedArrivalTemperatureRange>
+      <min>-70</min>
+      <max>24</max>
+    </allowedArrivalTemperatureRange>
+
+
+    <visitorTraderKinds>
+      <li>Trader_Wrathful_Gerzee</li>
+    </visitorTraderKinds>
+
+
+    <caravanTraderKinds>
+      <li>Trader_Wrathful_Gerzee</li>
+    </caravanTraderKinds>
+
+    <baseTraderKinds>
+      <li>Base_Neolithic_Standard</li>
+    </baseTraderKinds>
+
+
+
+
+
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 1)</li> <!--Constant 1 at all points levels-->
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <raidLootMaker>TribeRaidLootMaker</raidLootMaker>
+
+	<maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(120, 60)</li>
+        <li>(200, 100)</li>		
+        <li>(550, 150)</li>
+        <li>(1300, 300)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+
+	  
+
+<!-- full melee charge -->
+	  <li>       
+        <kindDef>Combat</kindDef>
+		<commonality>100</commonality>
+        <options>
+		  <GerzeeBrawler>25</GerzeeBrawler>		
+		  <GerzeeKiller>15</GerzeeKiller>
+		  <GerzeeBeserker>10</GerzeeBeserker>		  
+		  <GerzeeAlteredMauler>4</GerzeeAlteredMauler>				
+         <GerzeeWarChief>1</GerzeeWarChief>		  
+		</options>
+      </li>	  
+
+<!-- elite melee charge -->
+	  <li>       
+        <kindDef>Combat</kindDef>
+		<commonality>30</commonality>
+        <options>
+		  <GerzeeBrawler>2</GerzeeBrawler>		
+		  <GerzeeKiller>20</GerzeeKiller>
+		  <GerzeeBeserker>10</GerzeeBeserker>	
+		  <GerzeeAlteredMauler>10</GerzeeAlteredMauler>				
+         <GerzeeWarChief>1</GerzeeWarChief>		  
+		</options>
+      </li>	  
+
+
+<!-- ranged attack -->
+	  <li>       
+        <kindDef>Combat</kindDef>
+		<commonality>70</commonality>
+        <options>
+		  <GerzeeBrawler>5</GerzeeBrawler>		
+		  <GerzeeHurler>25</GerzeeHurler>
+		  <GerzeeKiller>5</GerzeeKiller>			
+		  <GerzeeAltered>7</GerzeeAltered>
+         <GerzeeWarChief>1</GerzeeWarChief>		  
+		</options>
+      </li>	  
+
+<!-- elite squad -->
+
+	  <li>       
+        <kindDef>Combat</kindDef>
+		<commonality>30</commonality>
+        <options>
+		  <GerzeeBrawler>2</GerzeeBrawler>		
+		  <GerzeeHurler>2</GerzeeHurler>
+		  <GerzeeKiller>10</GerzeeKiller>
+		  <GerzeeAlteredMauler>6</GerzeeAlteredMauler>				
+		  <GerzeeAltered>5</GerzeeAltered>
+         <GerzeeWarChief>1</GerzeeWarChief>		  
+		</options>
+      </li>	  	
+
+
+<!--  full mix -->
+	  <li>       
+        <kindDef>Combat</kindDef>
+		<commonality>70</commonality>
+        <options>
+		  <GerzeeBrawler>25</GerzeeBrawler>		
+		  <GerzeeHurler>10</GerzeeHurler>
+		  <GerzeeKiller>10</GerzeeKiller>
+		  <GerzeeBeserker>10</GerzeeBeserker>	
+		  <GerzeeAlteredMauler>4</GerzeeAlteredMauler>				
+		  <GerzeeAltered>1</GerzeeAltered>
+         <GerzeeWarChief>1</GerzeeWarChief>		  
+		</options>
+      </li>	  	 
+	  
+	  
+
+<!--trader etc -->
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <GerzeeWrathfulTrader>1</GerzeeWrathfulTrader>
+        </traders>
+        <carriers>
+          <Muffalo>3</Muffalo>
+        </carriers>
+		<guards>
+		  <GerzeeBrawler>10</GerzeeBrawler>		
+		  <GerzeeHurler>10</GerzeeHurler>
+		  <GerzeeKiller>10</GerzeeKiller>
+        </guards>
+		</li>
+
+
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <GerzeeKiller>2</GerzeeKiller>
+        </options>
+      </li>
+
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+		  <GerzeeBrawler>15</GerzeeBrawler>		
+		  <GerzeeHurler>6</GerzeeHurler>
+		  <GerzeeKiller>10</GerzeeKiller>	  
+		  <GerzeeBeserker>10</GerzeeBeserker>
+  		  <GerzeeAltered>4</GerzeeAltered>
+		  <GerzeeAlteredMauler>3</GerzeeAlteredMauler>	
+         <GerzeeWarChief>1</GerzeeWarChief>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/GerzeeBeserkerBaseIcon</settlementTexturePath>
+	<factionIconPath>World/GerzeeBeserkerBaseIcon</factionIconPath>
+<!--	<expandingIconTexture>World/GerzeeBeserkerBaseIcon</expandingIconTexture>-->
+
+    <raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+	
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>83</configurationListOrderPriority>
+
+  </FactionDef>
+  
+
+</Defs>
