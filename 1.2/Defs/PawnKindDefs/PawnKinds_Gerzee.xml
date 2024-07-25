@@ -275,10 +275,7 @@
 	<inventoryOptions>
     </inventoryOptions>
     <itemQuality>Normal</itemQuality>
-    <weaponMoney>
-      <min>188</min>
-      <max>340</max>
-    </weaponMoney>
+	<weaponMoney>1200~4000</weaponMoney>
     <weaponTags>
        <li>MedievalMeleeAdvanced</li>
     </weaponTags>
@@ -522,7 +519,7 @@
     <itemQuality>Normal</itemQuality>
     <weaponMoney>
       <min>188</min><!--188 -->
-      <max>200</max>
+      <max>400</max><!--200-->
     </weaponMoney>
     <weaponTags>
       <li>NeolithicMeleeDecent</li>
@@ -719,8 +716,8 @@
     <apparelMoney>2500~3500</apparelMoney>
 	
 	<apparelRequired>
-      <li>Apparel_ShieldBelt</li>
       <li>Apparel_WarMask</li>
+      <li>Apparel_ShieldBelt</li>	  
     </apparelRequired>
 	
 	<minGenerationAge>4</minGenerationAge>
@@ -930,8 +927,8 @@
       <li>Neolithic</li>
     </apparelTags>
     <apparelMoney>
-      <min>200</min>
-      <max>200</max>
+      <min>400</min>
+      <max>400</max>
     </apparelMoney>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <techHediffsMoney>

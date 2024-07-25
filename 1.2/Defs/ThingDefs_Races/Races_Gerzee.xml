@@ -19,7 +19,7 @@ Another technology that surprisingly doesn’t work for the Gerzee is the act of
 <!-- flamability 1.0 to 1.5... good ol fur-->
       <Flammability>1.5</Flammability>
 <!-- from 20/30 to 30/45 -->
-      <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+      <ComfyTemperatureMin>-30</ComfyTemperatureMin><!--  -20 -->
       <ComfyTemperatureMax>15</ComfyTemperatureMax>
 	  
 	  <MeleeDPS>2</MeleeDPS>
@@ -64,7 +64,8 @@ Another technology that surprisingly doesn’t work for the Gerzee is the act of
 			  <HungerRateMultiplier>1.2</HungerRateMultiplier>
 			  <SmoothingSpeed>1.2</SmoothingSpeed>
               <MiningSpeed>1.3</MiningSpeed>	  
-	 
+<!--popular slaves-->
+			  <RoyalFavorValue>5</RoyalFavorValue>	 
 	 
     </statBases>
 
@@ -187,7 +188,7 @@ Another technology that surprisingly doesn’t work for the Gerzee is the act of
              <minAge>0</minAge>
         </li>
 		<li>
-              <def>BabyStageTakala</def>
+              <def>BabyStageGerzee</def>
               <minAge>0.2</minAge>
         </li>
         <li>
@@ -576,7 +577,7 @@ Another technology that surprisingly doesn’t work for the Gerzee is the act of
 		</li>	   
 	    <li>
                <defName>Pyromaniac</defName>		   
-		</li>	   
+		</li>	    		
 		</disallowedTraits>
 
 
@@ -615,7 +616,9 @@ Another technology that surprisingly doesn’t work for the Gerzee is the act of
                 <li>SleptInBarracks</li>				
                 <li>AteWithoutTable</li>
                 <li>NeedFood</li>			
-                <li>NeedRoomSize</li>					
+                <li>NeedRoomSize</li>		
+                <li>SleptInCold</li>
+                <li>SleptOnGround</li>				
 <!--
 
 	
@@ -643,9 +646,9 @@ Another technology that surprisingly doesn’t work for the Gerzee is the act of
         <raceRestriction>
 
             <apparelList>
-				<li MayRequire="Brightsideguy.GerzeeGear">GerzeePowerArmor</li>		
-				<li MayRequire="Brightsideguy.GerzeeGear">GerzeePowerArmorHelmet</li>
-<!--                <li MayRequire="Brightsideguy.GerzeeGear">Apparel_Gerzee_PlateArmor</li>-->
+				<li MayRequire="Brightsideguy.GerzeeExpansion">GerzeePowerArmor</li>		
+				<li MayRequire="Brightsideguy.GerzeeExpansion">GerzeePowerArmorHelmet</li>
+<!--                <li MayRequire="Brightsideguy.GerzeeExpansion">Apparel_Gerzee_PlateArmor</li>-->
             </apparelList>
 			
 
@@ -662,9 +665,11 @@ Another technology that surprisingly doesn’t work for the Gerzee is the act of
                 <li>Apparel_WarVeil</li>
                 <li>Apparel_WarMask</li>	
                 <li>Apparel_ShieldBelt</li>
+                <li>Apparel_SmokepopBelt</li>				
+				
 
  			    <!--Gerzee Gear and Grub-->
-				<li MayRequire="Brightsideguy.GerzeeGear">GerzeeHelm_Apparel</li>	
+				<li MayRequire="Brightsideguy.GerzeeExpansion">GerzeeHelm_Apparel</li>	
 
 
                 <!--Combat Extended (except one i think)-->
@@ -672,6 +677,13 @@ Another technology that surprisingly doesn’t work for the Gerzee is the act of
                 <li MayRequire="CETeam.CombatExtended">Apparel_TribalBackpack</li>
 				<li MayRequire="CETeam.CombatExtended">Apparel_Backpack</li>
 				<li MayRequire="CETeam.CombatExtended">Apparel_TacVest</li>
+				<li MayRequire="CETeam.CombatExtended">Apparel_MeleeShield</li>				
+				<li MayRequire="CETeam.CombatExtended">Apparel_BallisticShield</li>				
+				
+				
+				
+				
+				
 
                 <!--Combat Extended shields-->
 				<li MayRequire="Combat Extended: Shields">Apparel_NguniShield</li>
@@ -711,6 +723,10 @@ Another technology that surprisingly doesn’t work for the Gerzee is the act of
 				<li MayRequire="VanillaExpanded.VAPPE">VAE_Apparel_Skirt</li>
 				<li MayRequire="VanillaExpanded.VAPPE">VAE_Apparel_BuildersJacket</li>
 				<li MayRequire="VanillaExpanded.VAPPE">VAE_Apparel_LabCoat</li>
+				<li MayRequire="VanillaExpanded.VAPPE">VAE_Headgear_Scarf</li>
+<!--				<li MayRequire="VanillaExpanded.VAPPE">VAE_Headgear_SurgicalMask</li>-->				
+				
+				
 				
 				<!--XND Survival Tools -->
 			
@@ -734,12 +750,13 @@ Another technology that surprisingly doesn’t work for the Gerzee is the act of
 
 
 
+
             </whiteApparelList>
 
 
             <weaponList>
 			  <!--Gerzee Gear-->
-              <li MayRequire="Brightsideguy.GerzeeGear">Gerzee_Ram_MeleeWeapon</li>
+              <li MayRequire="Brightsideguy.GerzeeExpansion">Gerzee_Ram_MeleeWeapon</li>
 			  
 			  
 				
@@ -763,6 +780,7 @@ Another technology that surprisingly doesn’t work for the Gerzee is the act of
 		        <li>Pila</li>
 		   
 
+				
 				
 				
 		   
@@ -855,8 +873,22 @@ Another technology that surprisingly doesn’t work for the Gerzee is the act of
            <!--Combat Extended -->
                 <li MayRequire="CETeam.CombatExtended">Gun_LMG</li>
                 <li MayRequire="CETeam.CombatExtended">CE_GrenadeLauncher</li>
+
+
+           <!--Vanilla Weapons Expanded Tribal -->
+                <li MayRequire="VanillaExpanded.VWETB">VWE_MeleeWeapon_HeavyClub</li>
+                <li MayRequire="VanillaExpanded.VWETB">VWE_Weapon_FireBomb</li>
+
+
+				<!--Royalty-->
+		   <li MayRequire="Ludeon.Rimworld.Royalty">MeleeWeapon_ZeusHammerBladelink</li>
+		   <li MayRequire="Ludeon.Rimworld.Royalty">MeleeWeapon_Zeushammer</li>
+
+
             </whiteWeaponList>
 			
+
+
 
 
 
@@ -903,6 +935,9 @@ Another technology that surprisingly doesn’t work for the Gerzee is the act of
 				<li>RawAgave</li>
 				<li>RawRice</li>
 				<li>RawPotatoes</li>
+				<li>RawFungus</li>			
+
+				<li>InsectJelly</li>	
 				
 				
 				<li>Chocolate</li>
@@ -915,6 +950,10 @@ Another technology that surprisingly doesn’t work for the Gerzee is the act of
 				<li>Flake</li>
 				<li>PsychiteTea</li>
 				<li>Yayo</li>			
+              <li MayRequire="Brightsideguy.GerzeeExpansion">RawGrungo</li>									
+				
+				
+				
 			<!-- soybeans mod, as requested by a player-->
 			<li MayRequire="penultimatejive.soybeans">ZDlbctxJNV</li>
 			<li MayRequire="penultimatejive.soybeans">ULAXMmBuga</li>
@@ -1023,6 +1062,13 @@ Another technology that surprisingly doesn’t work for the Gerzee is the act of
 				<li MayRequire="VanillaExpanded.VPlantsE">VCE_Bearberry</li>
 				<li MayRequire="VanillaExpanded.VPlantsE">VCE_RawBanana</li>
 				<li MayRequire="VanillaExpanded.VPlantsE">VCE_RawOrange</li>
+				
+				
+					<!--Cannibal and Insect Meals-->		
+				<li MayRequire="Mlie.CannibalMeals">CAN_InsectKibble</li>	
+				<li MayRequire="Mlie.CannibalMeals">CAN_CannibalKibble</li>				
+				
+				
 				
             </whiteFoodList>
 			

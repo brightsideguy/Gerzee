@@ -9,7 +9,7 @@
 				<kindDefs>
 	  <li>GerzeeSlave</li>
 				</kindDefs>
-<!--				<chance>25.0</chance>-->
+				<chance>40.0</chance>
 			</li>
 		</alienslavekinds>
 		
@@ -23,7 +23,7 @@
 	  <li>GerzeeSlave</li>
 	  <li>GerzeeSpaceRefugee</li>
 				</kindDefs>
-				<chance>5.0</chance>
+				<chance>25.0</chance>
 			</li>
 		</alienrefugeekinds>
 		<alienwandererkinds>
@@ -36,7 +36,7 @@
 	  <li>GerzeeWarrior</li>
 	  <li>GerzeeSlave</li>
 						</kindDefs>
-						<chance>15.0</chance>
+						<chance>35.0</chance>
 					</li>
 				</pawnKindEntries>
 				<factionDefs>
@@ -51,7 +51,7 @@
 						<kindDefs>
 							<li>GerzeeColonist</li>
 						</kindDefs>
-						<chance>15.0</chance>
+						<chance>25.0</chance>
 					</li>
 				</pawnKindEntries>
 				<factionDefs>
@@ -64,7 +64,7 @@
 						<kindDefs>
 							<li>GerzeeColonist</li>
 						</kindDefs>
-						<chance>15.0</chance>
+						<chance>25.0</chance>
 					</li>
 				</pawnKindEntries>
 				<factionDefs>

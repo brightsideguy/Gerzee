@@ -124,6 +124,26 @@
 <!-- ======= end of equium framework ==== -->
 	
 	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="GerzeeRace"]</xpath>
+				<value>
+					<comps />
+				</value>
+			</li>
+			
+
+				<li Class="PatchOperationAdd">	
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="GerzeeRace"]/comps</xpath>
+		<value>
+			<li>
+			  <compClass>CombatExtended.CompPawnGizmo</compClass>
+			</li>
+			<li Class="CombatExtended.CompProperties_Suppressable" />
+		</value>
+				</li>
+	
+	
+	
 
 				<li Class="PatchOperationAddModExtension">
 					<xpath>Defs/PawnKindDef[
@@ -133,7 +153,7 @@
 					<value>
 						<li Class="CombatExtended.LoadoutPropertiesExtension">
 							<primaryMagazineCount>
-								<min>2</min>
+								<min>3</min>
 								<max>8</max>
 							</primaryMagazineCount>
 						</li>

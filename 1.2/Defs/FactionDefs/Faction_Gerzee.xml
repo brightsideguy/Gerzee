@@ -191,7 +191,7 @@
     </startingGoodwill>
     <naturalColonyGoodwill>
       <min>-100</min>
-      <max>-74</max><!-- from -90 to above -75 so can make neutral, but will go hostile at the drop of a hat  -->
+      <max>-70</max><!-- from -90 to above -75 so can make neutral, but will go hostile at the drop of a hat  -->
     </naturalColonyGoodwill>
 	
 	<pawnNameMaker>NamerPersonTribal</pawnNameMaker>  
