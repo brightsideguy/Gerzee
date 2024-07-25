@@ -5,6 +5,9 @@
 	<author>Brightsideguy</author>
 		<packageId>Brightsideguy.GerzeeRace</packageId>
 	<supportedVersions>
+		<li>1.5</li>
+		<li>1.4</li>
+		<li>1.3</li>
 		<li>1.2</li>
 		<li>1.1</li>
 		<li>1.0</li>
@@ -17,7 +20,7 @@ SUMMARY
 Adds a strong but timid primitive race with unique eating habits and body structure. Great at nature-based labor and usually no knowledge of combat, but have the physique to be trained into walking tanks. Often brutal backstories, considering how they end up on rimworlds. The aim here to add a race that helps space feel like its filled with a wide range of species.
 
 NOTICE
-1.0 no longer being updated.
+Only 1.4 will recieve updates.
 
 RACE DESCRIPTION
 A fairly primitive race, the Gerzee mostly spend their lives foraging for plants, running from large predators, and socializing with the family that have not yet been eaten by those large predators. Though the Gerzee tower in size over most humanoid species, being a fairly small and herbivorous prey species on their home planet means they’ve evolved to run at the first sign of danger. This timid nature and their comparative strength have made them attractive stock for space slavers, and so the Gerzee slaves (and escaped slaves) have begun showing up on rimworlds.
@@ -165,6 +168,145 @@ G as in good + er + zee
 
 	</v1.2>
 	
+	   <v1.3>
+	
+SUMMARY
+Adds a strong but timid primitive race with unique eating habits and body structure. Great at nature-based labor and usually no knowledge of combat, but have the physique to be trained into walking tanks. Often brutal backstories, considering how they end up on rimworlds. The aim here to add a race that helps space feel like its filled with a wide range of species.
+
+NOTE
+Recently updated.
+
+RACE DESCRIPTION
+A fairly primitive race, the Gerzee mostly spend their lives foraging for plants, running from large predators, and socializing with the family that have not yet been eaten by those large predators. Though the Gerzee tower in size over most humanoid species, being a fairly small and herbivorous prey species on their home planet means they’ve evolved to run at the first sign of danger. This timid nature and their comparative strength have made them attractive stock for space slavers, and so the Gerzee slaves (and escaped slaves) have begun showing up on rimworlds.
+
+With their four eyes on top of their flat head, bulky bodies, and large fingers, most humanoid equipment simply doesn’t fit the Gerzee physique. And while they can eat plants most humanoids could not, Gerzee cannot eat cooked food. A few glitterworld scientists have guessed that it has something to do with a sensitivity to what heat does to food, but since slavers don’t mind feeding their slaves cheap hay, no one has bothered to actually find out why. All they know is that the Gerzee make great cheap slaves, and that those who get past their timid nature can become quite dangerous.
+
+
+MOD COMPATIBILITY:
+Check Steam for latest details.
+
+
+
+RACE SPECS:
+Big, somewhat fast, strong immune system, suited for cold environments.
+Can eat grass, dandelions, hay, and other plants that humans can't eat, as well as nutrient paste. But not meat or cooked meals.
+Short lifespans (18 years and become adults at 2.5)
+Multiple children born at once (when using AlienRace-friendly children mods). Currently works using a combo of Children, School, and Learning --> Humanoid Alien Races 2.0 --> Gerzee Race --> Baby and Children --> Gerzee + BnC Patch --> BnC Alien Support
+Doesn't mind an awful barracks.
+Unique set of Gerzee-specific backstories.
+Naturally are 0-skill fighters and are easier to hit due to their size. But are potential walking tanks if trained well, due to the greater HP and brutal fist damage.
+Can only use "big" weapons (spear/Ikwa, sword, horn, tusk, greatbow, and minigun).
+Can only fit big or adjustable clothing (duster, parka, warveil, warmask, shieldbelt, and flak gear).
+Fast base-speed for natural tasks, such as taming animals, mining, smoothing, and stone cutting (meaning a level 1 skill Gerzee is much faster than a level 1 skill from another species).
+Slow base-speed for modern tasks, such as medicine and research.
+Most are unable to cook or do research.
+Worth a lot of money when being sold as a slave.
+Three-fingered hands, four-toed feet, four eyes total.
+
+FACTION SPECS:
+-The Free Gerzee: Peaceful tribe of ex-slaves just trying to get by.
+-The Gerzee Wrathful: Violent tribe of escaped slaves who have mentally snapped from years of slavery and are now very willing to harm, well, pretty much everyone. Unlike most Gerzee, they're pretty decent at violence. Spoiler: 
+
+
+PRONUNCIATION
+G as in good + er + zee
+
+
+
+	</v1.3>
+
+
+	   <v1.4>
+	
+SUMMARY
+Adds a strong but timid primitive race with unique eating habits and body structure. Great at nature-based labor and usually no knowledge of combat, but have the physique to be trained into walking tanks. Often brutal backstories, considering how they end up on rimworlds. The aim here to add a race that helps space feel like its filled with a wide range of species.
+
+NOTE
+Recently updated.
+
+RACE DESCRIPTION
+A fairly primitive race, the Gerzee mostly spend their lives foraging for plants, running from large predators, and socializing with the family that have not yet been eaten by those large predators. Though the Gerzee tower in size over most humanoid species, being a fairly small and herbivorous prey species on their home planet means they’ve evolved to run at the first sign of danger. This timid nature and their comparative strength have made them attractive stock for space slavers, and so the Gerzee slaves (and escaped slaves) have begun showing up on rimworlds.
+
+With their four eyes on top of their flat head, bulky bodies, and large fingers, most humanoid equipment simply doesn’t fit the Gerzee physique. And while they can eat plants most humanoids could not, Gerzee cannot eat cooked food. A few glitterworld scientists have guessed that it has something to do with a sensitivity to what heat does to food, but since slavers don’t mind feeding their slaves cheap hay, no one has bothered to actually find out why. All they know is that the Gerzee make great cheap slaves, and that those who get past their timid nature can become quite dangerous.
+
+
+MOD COMPATIBILITY:
+Check Steam for latest details.
+
+
+
+RACE SPECS:
+Big, somewhat fast, strong immune system, suited for cold environments.
+Can eat grass, dandelions, hay, and other plants that humans can't eat, as well as nutrient paste. But not meat or cooked meals.
+Short lifespans (18 years and become adults at 2.5)
+Multiple children born at once (when using AlienRace-friendly children mods). Currently works using a combo of Children, School, and Learning --> Humanoid Alien Races 2.0 --> Gerzee Race --> Baby and Children --> Gerzee + BnC Patch --> BnC Alien Support
+Doesn't mind an awful barracks.
+Unique set of Gerzee-specific backstories.
+Naturally are 0-skill fighters and are easier to hit due to their size. But are potential walking tanks if trained well, due to the greater HP and brutal fist damage.
+Can only use "big" weapons (spear/Ikwa, sword, horn, tusk, greatbow, and minigun).
+Can only fit big or adjustable clothing (duster, parka, warveil, warmask, shieldbelt, and flak gear).
+Fast base-speed for natural tasks, such as taming animals, mining, smoothing, and stone cutting (meaning a level 1 skill Gerzee is much faster than a level 1 skill from another species).
+Slow base-speed for modern tasks, such as medicine and research.
+Most are unable to cook or do research.
+Worth a lot of money when being sold as a slave.
+Three-fingered hands, four-toed feet, four eyes total.
+
+FACTION SPECS:
+-The Free Gerzee: Peaceful tribe of ex-slaves just trying to get by.
+-The Gerzee Wrathful: Violent tribe of escaped slaves who have mentally snapped from years of slavery and are now very willing to harm, well, pretty much everyone. Unlike most Gerzee, they're pretty decent at violence. Spoiler: 
+
+
+PRONUNCIATION
+G as in good + er + zee
+
+
+
+	</v1.4>
+	
+	
+	   <v1.5>
+	
+SUMMARY
+Adds a strong but timid primitive race with unique eating habits and body structure. Great at nature-based labor and usually no knowledge of combat, but have the physique to be trained into walking tanks. Often brutal backstories, considering how they end up on rimworlds. The aim here to add a race that helps space feel like its filled with a wide range of species.
+
+NOTE
+Recently updated.
+
+RACE DESCRIPTION
+A fairly primitive race, the Gerzee mostly spend their lives foraging for plants, running from large predators, and socializing with the family that have not yet been eaten by those large predators. Though the Gerzee tower in size over most humanoid species, being a fairly small and herbivorous prey species on their home planet means they’ve evolved to run at the first sign of danger. This timid nature and their comparative strength have made them attractive stock for space slavers, and so the Gerzee slaves (and escaped slaves) have begun showing up on rimworlds.
+
+With their four eyes on top of their flat head, bulky bodies, and large fingers, most humanoid equipment simply doesn’t fit the Gerzee physique. And while they can eat plants most humanoids could not, Gerzee cannot eat cooked food. A few glitterworld scientists have guessed that it has something to do with a sensitivity to what heat does to food, but since slavers don’t mind feeding their slaves cheap hay, no one has bothered to actually find out why. All they know is that the Gerzee make great cheap slaves, and that those who get past their timid nature can become quite dangerous.
+
+
+MOD COMPATIBILITY:
+Check Steam for latest details.
+
+
+
+RACE SPECS:
+Big, somewhat fast, strong immune system, suited for cold environments.
+Can eat grass, dandelions, hay, and other plants that humans can't eat, as well as nutrient paste. But not meat or cooked meals.
+Short lifespans (18 years and become adults at 2.5)
+Multiple children born at once (when using AlienRace-friendly children mods). Currently works using a combo of Children, School, and Learning --> Humanoid Alien Races 2.0 --> Gerzee Race --> Baby and Children --> Gerzee + BnC Patch --> BnC Alien Support
+Doesn't mind an awful barracks.
+Unique set of Gerzee-specific backstories.
+Naturally are 0-skill fighters and are easier to hit due to their size. But are potential walking tanks if trained well, due to the greater HP and brutal fist damage.
+Can only use "big" weapons (spear/Ikwa, sword, horn, tusk, greatbow, and minigun).
+Can only fit big or adjustable clothing (duster, parka, warveil, warmask, shieldbelt, and flak gear).
+Fast base-speed for natural tasks, such as taming animals, mining, smoothing, and stone cutting (meaning a level 1 skill Gerzee is much faster than a level 1 skill from another species).
+Slow base-speed for modern tasks, such as medicine and research.
+Most are unable to cook or do research.
+Worth a lot of money when being sold as a slave.
+Three-fingered hands, four-toed feet, four eyes total.
+
+FACTION SPECS:
+-The Free Gerzee: Peaceful tribe of ex-slaves just trying to get by.
+-The Gerzee Wrathful: Violent tribe of escaped slaves who have mentally snapped from years of slavery and are now very willing to harm, well, pretty much everyone. Unlike most Gerzee, they're pretty decent at violence. Spoiler: 
+
+
+PRONUNCIATION
+G as in good + er + zee
+	</v1.5>	
 	
   </descriptionsByVersion>
 	
